@@ -1,5 +1,13 @@
 
 {
-  "fullstack-cohort-2":{
-  }
+  "fullstack-cohort-2":
+    [{
+      "completed":false,
+      "title":"Applicant Review",
+      "breakdown":"Install Browsers(Chrome and Firefox), Install zoom, TouchTyping modules(620 + 649 send screenshots to edu@theablestate.com)",
+      "facilitator": "Coach Wampamba David",
+      "co-facilitators": "Mr.Mbazira Ronald",
+      "date-and-time":"07-03-2022",
+  },
+     ]
 }
