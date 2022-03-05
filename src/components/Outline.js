@@ -3,6 +3,7 @@ import React from 'react';
 function Outline({ id }) {
     const [outline, setOutline] = React.useState([])
     React.useEffect(async () => {
+        document.title = "Full stack Web Developer Cohort 2"
         const fetched = await fetchOutline()
         setOutline(fetched)
     }, [])
@@ -14,10 +15,16 @@ function Outline({ id }) {
     }
 
   return (
-      <div className="container mx-auto px-4 text-sm">
+      <div className="container mx-auto p-4  text-sm">
+          <div className="align-center leading-6 mb-4">
+              <h1 className="text-md"><b>Full Stack Web Developer - Cohort 2 (March - October, 2022)</b></h1>
+                <p>We welcome you to the second of cohort of Full stack Web Development at Ablestate Creatives Limited.</p>
+                <p>Check the tentative outline below.</p>
+                <p>We wish you good luck!</p>
+          </div>
           {
               outline && (
-                <table className="table-auto border-collapse border border-slate-400 p-2">
+                <table className="table-auto border-collapse border border-slate-400 p-2 align-top">
                   <thead>
                       <tr>
                             <th className="border-collapse border border-slate-400 p-2">No#</th>
