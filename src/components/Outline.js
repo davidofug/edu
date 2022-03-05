@@ -1,5 +1,5 @@
 import React from 'react';
-
+import logo from '../assets/images/ablestate-logo.jpg';
 function Outline({ id }) {
     const [outline, setOutline] = React.useState([])
     React.useEffect(async () => {
@@ -17,6 +17,9 @@ function Outline({ id }) {
   return (
       <div className="container mx-auto p-4  text-sm">
           <div className="align-center leading-6 mb-4">
+              <a href="https://theablestate.com" target="_blank">
+                  <img src={logo} alt="Ablestate logo" className="w-16 mx-auto my-5" />
+          </a>
               <h1 className="text-md"><b>Full Stack Web Developer - Cohort 2 (March - October, 2022)</b></h1>
                 <p>We welcome you to the second of cohort of Full stack Web Development at Ablestate Creatives Limited.</p>
                 <p>Check the tentative outline below.</p>
@@ -41,7 +44,7 @@ function Outline({ id }) {
                                     <p>
                                         <b>{title}</b>
                                     </p>
-                                    <ul className="list-decimal pl-4">
+                                    <ul className="list-decimal pl-4 leading-6">
                                         {breakdown && breakdown.split(",").map((item, index) => (<li key={index.toString()}>{item}</li>))}
                                     </ul>
                                 </td>
