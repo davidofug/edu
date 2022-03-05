@@ -50,7 +50,7 @@ function Outline({ id }) {
                           {outline.map(({ title, breakdown, facilitator, coFacilitators, date, timeTo, timeFrom }, index) => (
                             <tr key={index.toString()}>
                                 <td className="border-collapse border border-slate-400 p-2">{(index = index + 1)}</td>
-                                <td className="border-collapse border border-slate-400 p-2">
+                                <td className="border-collapse border border-slate-400 p-2 align-top">
                                     <p>
                                         <b>{title}</b>
                                     </p>
@@ -58,12 +58,12 @@ function Outline({ id }) {
                                         {breakdown && breakdown.split(",").map((item, index) => (<li key={index.toString()}>{item}</li>))}
                                     </ul>
                                 </td>
-                                <td className="border-collapse border border-slate-400 p-2">
+                                <td className="border-collapse border border-slate-400 p-2 align-top">
                                       <p>{facilitator} - <b>Main</b></p>
                                     {coFacilitators && (<p><b>Co-facilitator(s)</b></p>)}
                                     {coFacilitators && coFacilitators.split(",").map((item, index) => (<p key={index.toString()}>{item}</p>))}
                                 </td>
-                                <td className="border-collapse border border-slate-400 p-2">
+                                <td className="border-collapse border border-slate-400 p-2 align-top">
                                     <b >{date}</b><br/>
                                     <span className="text-xs text-slate-500">{timeFrom} - {timeTo}</span>
                                 </td>
