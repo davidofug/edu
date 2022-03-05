@@ -72,13 +72,17 @@ function Outline({ id }) {
                       </tbody>
               </table>
               )}
+          <div className="align-center leading-6 my-4">
           <p>
               Follow us <a href="https://twitter.com/theablestate">Twitter</a> <a href="https://facebook.com/theablestate">Facebook</a> <a href="https://instagram.com/theablestate">Instagram</a>
           </p>
-          <p>&copy; Ablestate Creatives Ltd. {() => {
-              const date = new Date();
-                return date.getFullYear();
-          }}</p>
+              <p>
+                  &copy; Ablestate Creatives Ltd. {() => {
+                    const date = new Date();
+                    return date.getFullYear();
+                }}
+            </p>
+          </div>
       </div>
   )
 }
