@@ -53,7 +53,7 @@ function Outline({ id }) {
                                 </td>
                                 <td className="border-collapse border border-slate-400 p-2">
                                       <p>{facilitator} - <b>Main</b></p>
-                                    {coFacilitator && (<p><b>Co-facilitator</b></p>)}
+                                    {coFacilitators && (<p><b>Co-facilitator(s)</b></p>)}
                                     {coFacilitators && coFacilitators.split(",").map((item, index) => (<p key={index.toString()}>{item}</p>))}
                                 </td>
                                 <td className="border-collapse border border-slate-400 p-2">
