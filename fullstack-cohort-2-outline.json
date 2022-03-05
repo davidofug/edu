@@ -51,6 +51,16 @@
         "date":"TBC",
         "timeFrom":"09:05:00",
         "timeTo":"11:55:00"
+    },
+    {
+        "completed":false,
+        "title":"Use case Presentation",
+        "breakdown":"Scrum and Trello",
+        "facilitator": "Mrs.Nakityo Joanita",
+        "coFacilitators": "TBC",
+        "date":"TBC",
+        "timeFrom":"09:05:00",
+        "timeTo":"11:55:00"
     }
         
   ]
