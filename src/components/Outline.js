@@ -34,7 +34,7 @@ function Outline({ id }) {
           </div>
           {
               outline && (
-                  <table className="table-auto border-collapse border border-slate-400 p-2 align-top">
+                  <table className="table-auto border-collapse border border-slate-400 w-full p-2 align-top">
                       <caption>
                           <b>Full Stack Web Development Outline</b>
                       </caption>
