@@ -29,7 +29,7 @@ function Outline({ id }) {
               outline && (
                   <table className="table-auto border-collapse border border-slate-400 p-2 align-top">
                       <caption>
-                          <b>Full Stack Web Developer Outline</b>
+                          <b>Full Stack Web Development Outline</b>
                       </caption>
                   <thead>
                       <tr>
@@ -54,7 +54,7 @@ function Outline({ id }) {
                                 <td className="border-collapse border border-slate-400 p-2">
                                       <p>{facilitator} - <b>Main</b></p>
                                     {coFacilitator && (<p><b>Co-facilitator</b></p>)}
-                                    {coFacilitator && coFacilitator.split(",").map((item, index) => (<p key={index.toString()}>{item}</p>))}
+                                    {coFacilitators && coFacilitators.split(",").map((item, index) => (<p key={index.toString()}>{item}</p>))}
                                 </td>
                                 <td className="border-collapse border border-slate-400 p-2">
                                     <b >{date}</b><br/>
