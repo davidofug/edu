@@ -141,6 +141,16 @@
         "date":"TBC",
         "timeFrom":"09:05:00",
         "timeTo":"11:55:00"
+    },
+    {
+        "completed":false,
+        "title":"JavaScript in the Backend",
+        "breakdown":"What it NodeJS?, Why bother?, How to use it?, When to use it?",
+        "facilitator": "Coach Wampamba David",
+        "coFacilitators": "Coach Wampamba David",
+        "date":"TBC",
+        "timeFrom":"09:05:00",
+        "timeTo":"11:55:00"
     }
   ]
 }
