@@ -25,9 +25,9 @@
     {
         "completed":false,
         "title":"Purpose Driven Networking",
-        "breakdown":"Personal Statement,Professional Profile development",
+        "breakdown":"Personal Statement, Professional Profile development, Making a strong Online Footprint",
         "facilitator": "Mr.Mutamba Abudi",
-        "coFacilitators": "Coach Wampamba David",
+        "coFacilitators": "Coach Wampamba David, Mr.Mbazira Ronald",
         "date":"TBC",
         "timeFrom":"09:05:00",
         "timeTo":"11:55:00"
@@ -82,5 +82,15 @@
         "timeFrom":"09:05:00",
         "timeTo":"11:55:00"
     },
+    {
+        "completed":false,
+        "title":"User Experience and User Interface",
+        "breakdown":"Wireframes, Mockups, Figma",
+        "facilitator": "Mr.Charles Kasasira",
+        "coFacilitators": "Mr.Mutamba Abudi, Ms.Nakityo Joanita",
+        "date":"TBC",
+        "timeFrom":"09:05:00",
+        "timeTo":"11:55:00"
+    }
   ]
 }
