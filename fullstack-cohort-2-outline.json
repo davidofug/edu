@@ -97,7 +97,7 @@
         "title":"HTML",
         "breakdown":"What it is?, Why bother?, How to use it?, When to use it?",
         "facilitator": "Guest Facilitator",
-        "coFacilitators": "",
+        "coFacilitators": "TBC",
         "date":"TBC",
         "timeFrom":"09:05:00",
         "timeTo":"11:55:00"
@@ -106,8 +106,18 @@
         "completed":false,
         "title":"CSS",
         "breakdown":"What it is?, Why bother?, How to use it?, When to use it?",
-        "facilitator": "Guest Facilitator",
-        "coFacilitators": "",
+        "facilitator": "TBC",
+        "coFacilitators": "TBC",
+        "date":"TBC",
+        "timeFrom":"09:05:00",
+        "timeTo":"11:55:00"
+    },
+    {
+        "completed":false,
+        "title":"Bootstrap",
+        "breakdown":"What it is?, Why bother?, How to use it?, When to use it?",
+        "facilitator": "TBC",
+        "coFacilitators": "TBC",
         "date":"TBC",
         "timeFrom":"09:05:00",
         "timeTo":"11:55:00"
