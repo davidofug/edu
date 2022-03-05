@@ -21,6 +21,16 @@
         "date":"02-03-2022",
         "timeFrom":"09:05:00",
         "timeTo":"11:55:00"
+    },
+    {
+        "completed":false,
+        "title":"Purpose Driven Networking",
+        "breakdown":"Personal Statement,Professional Profile development",
+        "facilitator": "Mr.Mutamba Abudi",
+        "coFacilitators": "Coach Wampamba David",
+        "date":"TBC",
+        "timeFrom":"09:05:00",
+        "timeTo":"11:55:00"
     }
         
   ]
