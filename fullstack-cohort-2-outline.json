@@ -191,6 +191,16 @@
         "date":"TBC",
         "timeFrom":"09:05:00",
         "timeTo":"11:55:00"
+    },
+    {
+        "completed":false,
+        "title":"Internship (Optional)",
+        "breakdown":"",
+        "facilitator": "TBC",
+        "coFacilitators": "TBC",
+        "date":"TBC",
+        "timeFrom":"09:05:00",
+        "timeTo":"11:55:00"
     }
   ]
 }
