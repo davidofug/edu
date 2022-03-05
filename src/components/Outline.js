@@ -74,8 +74,11 @@ function Outline({ id }) {
               )}
           <p>
               Follow us <a href="https://twitter.com/theablestate">Twitter</a> <a href="https://facebook.com/theablestate">Facebook</a> <a href="https://instagram.com/theablestate">Instagram</a>
-              
           </p>
+          <p>&copy; Ablestate Creatives Ltd. {() => {
+              const date = new Date();
+                return date.getFullYear();
+          }}</p>
       </div>
   )
 }
