@@ -131,6 +131,16 @@
         "date":"TBC",
         "timeFrom":"09:05:00",
         "timeTo":"11:55:00"
+    },
+    {
+        "completed":false,
+        "title":"Modern JavaScript",
+        "breakdown":"What it is?, Why bother?, How to use it?, When to use it?",
+        "facilitator": "Mr.Charles Kasasira",
+        "coFacilitators": "Coach Wampamba David",
+        "date":"TBC",
+        "timeFrom":"09:05:00",
+        "timeTo":"11:55:00"
     }
   ]
 }
