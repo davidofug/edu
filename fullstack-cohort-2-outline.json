@@ -181,6 +181,16 @@
         "date":"TBC",
         "timeFrom":"09:05:00",
         "timeTo":"11:55:00"
+    },
+    {
+        "completed":false,
+        "title":"Deployment on Cloud",
+        "breakdown":"",
+        "facilitator": "TBC",
+        "coFacilitators": "TBC",
+        "date":"TBC",
+        "timeFrom":"09:05:00",
+        "timeTo":"11:55:00"
     }
   ]
 }
