@@ -61,7 +61,17 @@
         "date":"TBC",
         "timeFrom":"09:05:00",
         "timeTo":"11:55:00"
-    }
-        
+    },
+    {
+        "completed":false,
+        "title":"CLI, Git and Github",
+        "breakdown":"How does CLI come in?, How about Git, Hosting on Github, Collaboration",
+        "facilitator": "Mrs.Nakityo Joanita",
+        "coFacilitators": "TBC",
+        "date":"TBC",
+        "timeFrom":"09:05:00",
+        "timeTo":"11:55:00"
+    },
+
   ]
 }
