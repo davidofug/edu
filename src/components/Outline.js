@@ -21,13 +21,16 @@ function Outline({ id }) {
                   <img src={logo} alt="Ablestate logo" className="w-16 mx-auto my-5" />
           </a>
               <h1 className="text-md"><b>Full Stack Web Developer - Cohort 2 (March - October, 2022)</b></h1>
-                <p>We welcome you to the second of cohort of Full stack Web Development at Ablestate Creatives Limited.</p>
+                <p>We welcome you to the second cohort of Full Stack Web Development at Ablestate Creatives Limited.</p>
                 <p>Check the tentative outline below.</p>
                 <p>We wish you good luck!</p>
           </div>
           {
               outline && (
-                <table className="table-auto border-collapse border border-slate-400 p-2 align-top">
+                  <table className="table-auto border-collapse border border-slate-400 p-2 align-top">
+                      <caption>
+                          <b>Full Stack Web Developer Outline</b>
+                      </caption>
                   <thead>
                       <tr>
                             <th className="border-collapse border border-slate-400 p-2">No#</th>
