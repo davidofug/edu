@@ -151,6 +151,16 @@
         "date":"TBC",
         "timeFrom":"09:05:00",
         "timeTo":"11:55:00"
+    },
+    {
+        "completed":false,
+        "title":"FrontEnd Made Easy",
+        "breakdown":"An Introduction to React.JS, What it ReactJS?, Why bother?, How to use it?, When to use it?",
+        "facilitator": "Ms.Nakityo Joanita",
+        "coFacilitators": "Coach Wampamba David",
+        "date":"TBC",
+        "timeFrom":"09:05:00",
+        "timeTo":"11:55:00"
     }
   ]
 }
