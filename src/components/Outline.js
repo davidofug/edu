@@ -22,12 +22,12 @@ function Outline({ id }) {
           </a>
               <h1 className="text-md"><b>Full Stack Web Developer - Cohort 2 (March - October, 2022)</b></h1>
                 <p>We welcome you to the second cohort of Full Stack Web Development at Ablestate Creatives Limited.</p>
-              <p><b>Notice</b><br />1. The Internship opportunity comes to best performers in terms of attendance, quiz submission, participation in review questionaires and project completion rates. <br /> Interested individuals apply.<br/>
+              <p><b>Notice</b><br />1. The Internship opportunity comes to best performers in terms of attendance, quiz submission, participation in review questionaires and project completion rates. <br /> Interested individuals will be able to apply.<br/>
             The internship is a maximum of 2 months and not paid.
               </p>
               <p>2. Apprenticiship is also optional and the duration varies from 3 to 6 months. <br /> During the Apprenticiship you get to work on systems that are used in the industry.</p>
               <p>
-                While practicing as an Apprentice you get paid on per project basis.
+                While practicing as an Apprentice you get paid on per project basis. Apprenticiship are only available to those who have completed the Full Stack Web Development course with us. Interested individuals will be able to apply.
               </p>
               <p>Check the tentative outline below.</p>
                 <p>We wish you good luck!</p>
@@ -71,7 +71,11 @@ function Outline({ id }) {
                           ))}
                       </tbody>
               </table>
-            )}
+              )}
+          <p>
+              Follow us <a href="https://twitter.com/theablestate">Twitter</a> <a href="https://facebook.com/theablestate">Facebook</a> <a href="https://instagram.com/theablestate">Instagram</a>
+              
+          </p>
       </div>
   )
 }
