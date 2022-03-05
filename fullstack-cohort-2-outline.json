@@ -171,6 +171,16 @@
         "date":"TBC",
         "timeFrom":"09:05:00",
         "timeTo":"11:55:00"
+    },
+    {
+        "completed":false,
+        "title":"APIs and Express",
+        "breakdown":"REST APIs",
+        "facilitator": "TBC",
+        "coFacilitators": "TBC",
+        "date":"TBC",
+        "timeFrom":"09:05:00",
+        "timeTo":"11:55:00"
     }
   ]
 }
