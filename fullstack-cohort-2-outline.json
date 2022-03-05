@@ -194,6 +194,26 @@
     },
     {
         "completed":false,
+        "title":"Final Project submission",
+        "breakdown":"",
+        "facilitator": "TBC",
+        "coFacilitators": "TBC",
+        "date":"TBC",
+        "timeFrom":"09:05:00",
+        "timeTo":"11:55:00"
+    },
+    {
+        "completed":false,
+        "title":"Graduation day",
+        "breakdown":"",
+        "facilitator": "Ms.Stella Nakku",
+        "coFacilitators": "Training Team",
+        "date":"Saturday,1st October, 2022",
+        "timeFrom":"09:05:00",
+        "timeTo":"11:55:00"
+    },
+    {
+        "completed":false,
         "title":"Internship (Optional)",
         "breakdown":"",
         "facilitator": "TBC",
