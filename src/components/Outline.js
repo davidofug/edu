@@ -40,7 +40,7 @@ function Outline({ id }) {
                       </tr>
                       </thead>
                       <tbody>
-                          {outline.map(({ title, breakdown, facilitator, coFacilitator, date, timeTo, timeFrom }, index) => (
+                          {outline.map(({ title, breakdown, facilitator, coFacilitators, date, timeTo, timeFrom }, index) => (
                             <tr key={index.toString()}>
                                 <td className="border-collapse border border-slate-400 p-2">{(index = index + 1)}</td>
                                 <td className="border-collapse border border-slate-400 p-2">
