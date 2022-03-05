@@ -22,7 +22,7 @@ function Outline({ id }) {
           </a>
               <h1 className="text-md"><b>Full Stack Web Developer - Cohort 2 (March - October, 2022)</b></h1>
                 <p>We welcome you to the second cohort of Full Stack Web Development at Ablestate Creatives Limited.</p>
-              <p><b>Notice</b><br />1. The Internship opportunity comes to best performers in terms of attendance, quiz submission and project completion rates. <br /> Interested individuals apply.<br/>
+              <p><b>Notice</b><br />1. The Internship opportunity comes to best performers in terms of attendance, quiz submission, participation in review questionaires and project completion rates. <br /> Interested individuals apply.<br/>
             The internship is a maximum of 2 months and not paid.
               </p>
               <p>2. Apprenticiship is also optional and the duration varies from 3 to 6 months. <br /> During the Apprenticiship you get to work on systems that are used in the industry.</p>
