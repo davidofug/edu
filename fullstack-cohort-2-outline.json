@@ -135,9 +135,9 @@
     {
         "completed":false,
         "title":"Modern JavaScript",
-        "breakdown":"What it is?, Why bother?, How to use it?, When to use it?",
+        "breakdown":"What it is?, Why bother?, How to use it?, When to use it?, Introduction to TDD and BDD, Benefits, TDD Practice",
         "facilitator": "Mr.Charles Kasasira",
-        "coFacilitators": "Coach Wampamba David",
+        "coFacilitators": "Coach Wampamba David, Mr. David Derrick Anyuru",
         "date":"TBC",
         "timeFrom":"09:05:00",
         "timeTo":"11:55:00"
@@ -145,7 +145,7 @@
     {
         "completed":false,
         "title":"JavaScript in the Backend",
-        "breakdown":"What it NodeJS?, Why bother?, How to use it?, When to use it?",
+        "breakdown":"What it NodeJS?, Why bother?, How to use it?, When to use it?, TDD continued",
         "facilitator": "Coach Wampamba David",
         "coFacilitators": "Coach Wampamba David",
         "date":"TBC",
