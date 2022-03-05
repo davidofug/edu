@@ -161,6 +161,16 @@
         "date":"TBC",
         "timeFrom":"09:05:00",
         "timeTo":"11:55:00"
+    },
+    {
+        "completed":false,
+        "title":"Storage Systems",
+        "breakdown":"Introduction to Document Based Databases, Why bother?, How to use them?, JSON continued, Introduction to MongoDB",
+        "facilitator": "TBC",
+        "coFacilitators": "TBC",
+        "date":"TBC",
+        "timeFrom":"09:05:00",
+        "timeTo":"11:55:00"
     }
   ]
 }
