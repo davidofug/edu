@@ -32,7 +32,7 @@ function PublicNav() {
             to="/second-cohort-fullstack-outline"
             className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-orange-400 mr-4"
           >
-            Season 2
+            Season 2 Outline
           </Link>
         </div>
         <div>

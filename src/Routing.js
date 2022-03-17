@@ -9,6 +9,8 @@ import AddUser from "./components/AddUser";
 import PrivateRoute from "./components/helpers/PrivateRoute";
 import SignOut from "./components/SignOut";
 import UnAuthorized from "./components/UnAuthorized";
+import Missing from "./components/Missing";
+import ManageTasks from "./components/ManageTasks";
 
 function Routing() {
   return (
@@ -29,6 +31,10 @@ function Routing() {
           <Route element={<PrivateRoute allowedRoles={["admin"]} />}>
             <Route path="/add-user" element={<AddUser />} />
           </Route>
+          <Route element={<PrivateRoute allowedRoles={["admin","student","intern","apprentice","employee"]} />}>
+            <Route path="/manage-tasks" element={<ManageTasks />} />
+          </Route>
+          <Route path="*" element={<Missing />} />
         </Route>
       </Routes>
     </Router>

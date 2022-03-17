@@ -2,15 +2,13 @@ import React from "react";
 import { signOut } from "../helpers/functions";
 import { useAuth } from "../hooks/useAuth";
 import { Link, useNavigate } from "react-router-dom";
+import PrivateLink from "./PrivateLink";
 import logo from "../../assets/images/Ablestate-logo.png";
 
 function PrivateNav() {
   const navigate = useNavigate();
   const { user, setUser } = useAuth();
 
-  React.useEffect(() => {
-    // console.log("User", user.user_metadata);
-  }, [user]);
   return (
     <nav className="flex items-center justify-between flex-wrap p-6">
       <div className="flex items-center flex-shrink-0 text-white mr-6">
@@ -39,14 +37,34 @@ function PrivateNav() {
           >
             Dashboard
           </Link>
-          {user?.user_metadata?.roles && user.user_metadata?.roles.includes("admin") && (
-            <Link
-              to="/add-user"
-              className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-orange-400 mr-4"
-            >
-              Add User
-            </Link>
-          )}
+          <Link
+            to="/second-cohort-fullstack-outline"
+            className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-orange-400 mr-4"
+          >
+            Season 2 Outline
+          </Link>
+          {user?.user_metadata?.roles &&
+            user.user_metadata?.roles.includes("admin") && (
+              <Link
+                to="/add-user"
+                className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-orange-400 mr-4"
+              >
+                Add User
+              </Link>
+            )}
+          <PrivateLink
+            className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-orange-400 mr-4"
+            to="/manage-tasks"
+            allowedRoles={[
+              "admin",
+              "student",
+              "employee",
+              "intern",
+              "apprentice",
+            ]}
+          >
+            Manage Tasks
+          </PrivateLink>
         </div>
         <div>
           <Link
