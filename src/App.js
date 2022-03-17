@@ -1,23 +1,11 @@
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route
-} from 'react-router-dom';
-import Outline from './components/Outline';
-import Home from './components/Home';
-
+import Routing from "./Routing";
+import { AuthProvider } from './components/helpers/AuthProvider'
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route
-          path="/second-cohort-fullstak-outline"
-          element={<Outline id="fullstack-cohort-2" />}
-        />
-      </Routes>
-    </Router>
+    <AuthProvider>
+      <Routing />
+    </AuthProvider>
   );
-};
+}
 
 export default App;
