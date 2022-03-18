@@ -46,10 +46,10 @@ function PrivateNav() {
           {user?.user_metadata?.roles &&
             user.user_metadata?.roles.includes("admin") && (
               <Link
-                to="/add-user"
+                to="/members"
                 className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-orange-400 mr-4"
               >
-                Add User
+                Members
               </Link>
             )}
           <PrivateLink
