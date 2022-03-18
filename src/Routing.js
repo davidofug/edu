@@ -5,7 +5,7 @@ import Outline from "./components/Outline";
 import Home from "./components/Home";
 import Login from "./components/Login";
 import Dashboard from "./components/Dashboard";
-import AddUser from "./components/AddUser";
+import Members from "./components/Members";
 import PrivateRoute from "./components/helpers/PrivateRoute";
 import SignOut from "./components/SignOut";
 import UnAuthorized from "./components/UnAuthorized";
@@ -28,8 +28,8 @@ function Routing() {
           <Route element={<PrivateRoute allowedRoles={["student","admin"]} />}>
             <Route path="/dashboard" element={<Dashboard />} />
           </Route>
-          <Route element={<PrivateRoute allowedRoles={["admin"]} />}>
-            <Route path="/add-user" element={<AddUser />} />
+          <Route element={<PrivateRoute allowedRoles={["student","admin"]} />}>
+            <Route path="/members" element={<Members />} />
           </Route>
           <Route element={<PrivateRoute allowedRoles={["admin","student","intern","apprentice","employee"]} />}>
             <Route path="/manage-tasks" element={<ManageTasks />} />
