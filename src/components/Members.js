@@ -5,6 +5,12 @@ import supabase from "./helpers/supabase";
 import { useAuth } from "./hooks/useAuth";
 
 function AddUser() {
+  const [members, setMembers] = React.useState([]);
+  React.useEffect(async () => {
+    const { data, error } = await supabase.from("profiles").select();
+    setMembers(data);
+    // console.log(data);
+  }, []);
   const { user } = useAuth();
   const [errorMsg, setErrorMsg] = React.useState(null);
   const [successMsg, setSuccessMsg] = React.useState(null);
@@ -44,7 +50,12 @@ function AddUser() {
           {errorMsg && <p className="text-red-500">{errorMsg}</p>}
           {successMsg && <p className="text-green-500">{successMsg}</p>}
           <Formik
-            initialValues={{ email: "", password: "", roles: ["student"], addedBy:{id: user.id, email:user.email} }}
+            initialValues={{
+              email: "",
+              password: "",
+              roles: ["student"],
+              addedBy: { id: user.id, email: user.email },
+            }}
             validationSchema={addUserSchema}
             onSubmit={async (values, { resetForm, setSubmitting }) => {
               const { error } = await signUp(values);
@@ -53,7 +64,7 @@ function AddUser() {
               } else {
                 setErrorMsg(null);
                 setSuccessMsg("User added successfully!");
-                resetForm()
+                resetForm();
               }
               // console.log(values);
             }}
@@ -211,6 +222,28 @@ function AddUser() {
       <div className="col-span-6 bg-white p-6">
         <h1>List of Users</h1>
         <p>No users to load</p>
+        {members.length > 0 && (
+          <table className="w-full">
+            <thead>
+              <tr>
+                <th className="px-4 py-2">Email</th>
+                <th className="px-4 py-2">Roles</th>
+                <th className="px-4 py-2">Added By</th>
+                <th className="px-4 py-2">Added On</th>
+              </tr>
+            </thead>
+            <tbody>
+              {members.map((member) => (
+                <tr key={member.id}>
+                  <td className="border px-4 py-2">{member.email}</td>
+                  <td className="border px-4 py-2"></td>
+                  <td className="border px-4 py-2">-</td>
+                  <td className="border px-4 py-2">-</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        )}
       </div>
     </div>
   );
