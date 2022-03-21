@@ -46,13 +46,14 @@ function AddUser() {
           <Formik
             initialValues={{ email: "", password: "", roles: ["student"], addedBy:{id: user.id, email:user.email} }}
             validationSchema={addUserSchema}
-            onSubmit={async (values, { setSubmitting }) => {
+            onSubmit={async (values, { resetForm, setSubmitting }) => {
               const { error } = await signUp(values);
               if (error) {
                 setErrorMsg(error.message);
               } else {
                 setErrorMsg(null);
                 setSuccessMsg("User added successfully!");
+                resetForm()
               }
               // console.log(values);
             }}
