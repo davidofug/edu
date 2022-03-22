@@ -28,7 +28,7 @@ function Routing() {
           <Route element={<PrivateRoute allowedRoles={["student","admin"]} />}>
             <Route path="/dashboard" element={<Dashboard />} />
           </Route>
-          <Route element={<PrivateRoute allowedRoles={["student","admin"]} />}>
+          <Route element={<PrivateRoute allowedRoles={["admin"]} />}>
             <Route path="/members" element={<Members />} />
           </Route>
           <Route element={<PrivateRoute allowedRoles={["admin","student","intern","apprentice","employee"]} />}>
