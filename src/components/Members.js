@@ -4,12 +4,26 @@ import * as Yup from "yup";
 import supabase from "./helpers/supabase";
 import { useAuth } from "./hooks/useAuth";
 
-function AddUser() {
+function Member() {
   const [members, setMembers] = React.useState([]);
+  const [companies, setCompanies] = React.useState([]);
+  const getCompanies = React.useCallback(async () => {
+    try {
+      const { data, error } = await supabase.from("companies").select();
+      if (error) {
+        console.log(error);
+        return false;
+      }
+      return data;
+    } catch (error) {
+      console.log(error);
+    }
+  }, []);
+
   React.useEffect(async () => {
     const { data, error } = await supabase.from("profiles").select();
     setMembers(data);
-    // console.log(data);
+    setCompanies(await getCompanies());
   }, []);
   const { user } = useAuth();
   const [errorMsg, setErrorMsg] = React.useState(null);
@@ -18,14 +32,16 @@ function AddUser() {
     email: Yup.string()
       .email("Enter valid email")
       .required("Email is required!"),
+    company: Yup.string().required("Company is required!"),
     password: Yup.string().required("Password is required!"),
     confirm_password: Yup.string()
       .required("Confirm password is required!")
       .oneOf([Yup.ref("password"), null], "Passwords must match"),
-    roles: Yup.array().required("Assign a role to the user!"),
+    role: Yup.string().required("Assign a role to the user!"),
   });
 
   const signUp = async (values) => {
+    const { id, name } = JSON.parse(values?.company);
     const { user, session, error } = await supabase.auth.signUp(
       {
         email: values.email,
@@ -33,8 +49,14 @@ function AddUser() {
       },
       {
         data: {
-          roles: values.roles,
+          role: values.role,
           addedBy: { id: values.addedBy.id, email: values.addedBy.email },
+          company: { id, name },
+          name: {
+            first_name: values.first_name,
+            last_name: values.last_name
+          },
+          gender: values.gender
         },
       }
     );
@@ -42,32 +64,39 @@ function AddUser() {
     return { user, session, error };
   };
 
+  const handleSubmit = async (values, { resetForm, setSubmitting }) => {
+    const { error } = await signUp(values);
+    if (error) {
+      setErrorMsg(error.message);
+    } else {
+      setErrorMsg(null);
+      setSuccessMsg("User added successfully!");
+      resetForm();
+    }
+    alert("Submit clicked!");
+    console.log(values);
+  };
   return (
-    <div className="grid grid-cols-8 gap-3 bg-gray-100 p-4">
+    <div className="grid grid-cols-8 gap-2 bg-gray-100 p-4">
       <div className="bg-white col-span-2">
-        <div className="bg-white px-8 pt-6 pb-8 mb-4">
-          <h1>Add User</h1>
+        <div className="bg-white px-3 pb-3">
+          <h1 className="my-1">Add User</h1>
           {errorMsg && <p className="text-red-500">{errorMsg}</p>}
           {successMsg && <p className="text-green-500">{successMsg}</p>}
           <Formik
             initialValues={{
               email: "",
               password: "",
-              roles: ["student"],
+              confirm_password: "",
+              first_name: "",
+              last_name: "",
+              gender:"",
+              role: "",
               addedBy: { id: user.id, email: user.email },
+              company: { id: "", name: "" },
             }}
             validationSchema={addUserSchema}
-            onSubmit={async (values, { resetForm, setSubmitting }) => {
-              const { error } = await signUp(values);
-              if (error) {
-                setErrorMsg(error.message);
-              } else {
-                setErrorMsg(null);
-                setSuccessMsg("User added successfully!");
-                resetForm();
-              }
-              // console.log(values);
-            }}
+            onSubmit={handleSubmit}
           >
             {({ errors, touched }) => (
               <Form>
@@ -88,6 +117,78 @@ function AddUser() {
                   {errors.email && touched.email && (
                     <p className="text-red-500 text-xs italic">
                       {errors.email}
+                    </p>
+                  )}
+                </div>
+                <div className="col mb-4">
+                  <label
+                    className="block text-gray-700 text-sm font-bold mb-2"
+                    htmlFor="first_name"
+                  >
+                    First name
+                  </label>
+                  <Field
+                    className="shadow appearance-none border rounded w-full py-2 px-3 mb-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="first_name"
+                    name="first_name"
+                    type="type"
+                    placeholder="First name"
+                  />
+                  {errors.first_name && touched.first_name && (
+                    <p className="text-red-500 text-xs italic">
+                      {errors.first_name}
+                    </p>
+                  )}
+                </div>
+                <div className="col mb-4">
+                  <label
+                    className="block text-gray-700 text-sm font-bold mb-2"
+                    htmlFor="last_name"
+                  >
+                    Last name
+                  </label>
+                  <Field
+                    className="shadow appearance-none border rounded w-full py-2 px-3 mb-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="last_name"
+                    name="last_name"
+                    type="type"
+                    placeholder="Last name"
+                  />
+                  {errors.last_name && touched.last_name && (
+                    <p className="text-red-500 text-xs italic">
+                      {errors.last_name}
+                    </p>
+                  )}
+                </div>
+                <div className="col mb-4">
+                  <label
+                    className="block text-gray-700 text-sm font-bold mb-2"
+                    htmlFor="company"
+                  >
+                    Company/Organisation
+                  </label>
+                  <Field
+                    className="shadow appearance-none border rounded w-full py-2 px-3 mb-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="company"
+                    name="company"
+                    as="select"
+                  >
+                    <option value="">- Select Company -</option>
+                    {companies?.map((company) => (
+                      <option
+                        key={company.id}
+                        value={JSON.stringify({
+                          id: company.id,
+                          name: company.name,
+                        })}
+                      >
+                        {company.name}
+                      </option>
+                    ))}
+                  </Field>
+                  {errors.company && touched.company && (
+                    <p className="text-red-500 text-xs italic">
+                      {errors.company}
                     </p>
                   )}
                 </div>
@@ -132,86 +233,53 @@ function AddUser() {
                   )}
                 </div>
                 <div className="mb-6">
-                  Assign Roles
                   <label
                     className="block text-gray-700 text-sm font-bold mb-2"
                     htmlFor="student"
                   >
-                    <Field
-                      id="student"
-                      name="roles"
-                      type="checkbox"
-                      value="student"
-                    />{" "}
-                    Student
+                    Assign Role
                   </label>
+                  <Field id="role" name="role" as="select">
+                    <option value="">- Assign a role -</option>
+                    <option value="student">Student</option>
+                    <option value="admin">Admin</option>
+                    <option value="employee">Employee</option>
+                    <option value="intern">Intern</option>
+                    <option value="founder">Founder</option>
+                    <option value="apprentice">Apprentice</option>
+                    <option value="mentor">Mentor</option>
+                    <option value="facilitator">Facilitator</option>
+                  </Field>
+                  {errors.role && touched.role && (
+                    <p className="text-red-500 text-xs italic">
+                      {errors.role}
+                    </p>
+                  )}
+                </div>
+                <div className="mb-6">
                   <label
                     className="block text-gray-700 text-sm font-bold mb-2"
-                    htmlFor="admin"
+                    htmlFor="gender"
                   >
-                    <Field
-                      id="admin"
-                      name="roles"
-                      type="checkbox"
-                      value="admin"
-                    />{" "}
-                    Admin
+                    Gender
                   </label>
-                  <label
-                    className="block text-gray-700 text-sm font-bold mb-2"
-                    htmlFor="intern"
-                  >
-                    <Field
-                      id="intern"
-                      name="roles"
-                      type="checkbox"
-                      value="intern"
-                    />{" "}
-                    Intern
-                  </label>
-                  <label
-                    className="block text-gray-700 text-sm font-bold mb-2"
-                    htmlFor="apprentice"
-                  >
-                    <Field
-                      id="apprentice"
-                      name="roles"
-                      type="checkbox"
-                      value="apprentice"
-                    />{" "}
-                    Apprentince
-                  </label>
-                  <label
-                    className="block text-gray-700 text-sm font-bold mb-2"
-                    htmlFor="mentor"
-                  >
-                    <Field
-                      id="mentor"
-                      name="roles"
-                      type="checkbox"
-                      value="mentor"
-                    />{" "}
-                    Mentor
-                  </label>
-                  <label
-                    className="block text-gray-700 text-sm font-bold mb-2"
-                    htmlFor="employee"
-                  >
-                    <Field
-                      id="employee"
-                      name="roles"
-                      type="checkbox"
-                      value="employee"
-                    />{" "}
-                    Employee
-                  </label>
+                  <Field id="gender" name="gender" as="select">
+                    <option value="">- Gender -</option>
+                    <option value="Female">Female</option>
+                    <option value="Male">Male</option>
+                  </Field>
+                  {errors.gender && touched.gender && (
+                    <p className="text-red-500 text-xs italic">
+                      {errors.gender}
+                    </p>
+                  )}
                 </div>
                 <div className="flex items-center justify-between">
                   <button
                     className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                     type="submit"
                   >
-                    Save User
+                    Submit
                   </button>
                 </div>
               </Form>
@@ -220,27 +288,33 @@ function AddUser() {
         </div>
       </div>
       <div className="col-span-6 bg-white p-6">
-        <h1>List of Users</h1>
-        <p>No users to load</p>
-        {members.length > 0 && (
+        <h1>Members</h1>
+        {members?.length > 0 && (
           <table className="w-full">
             <thead>
               <tr>
-                <th className="px-4 py-2">Email</th>
-                <th className="px-4 py-2">Roles</th>
-                <th className="px-4 py-2">Added By</th>
-                <th className="px-4 py-2">Added On</th>
+                <th className="border p-1">Email</th>
+                <th className="border p-1">Company</th>
+                <th className="border p-1">First name</th>
+                <th className="border p-1">Last name</th>
+                <th className="border p-1">Role</th>
+                <th className="border p-1">Gender</th>
               </tr>
             </thead>
             <tbody>
-              {members.map((member) => (
-                <tr key={member.id}>
-                  <td className="border px-4 py-2">{member.email}</td>
-                  <td className="border px-4 py-2"></td>
-                  <td className="border px-4 py-2">-</td>
-                  <td className="border px-4 py-2">-</td>
+              {members.map((member) => {
+                const { id, email, user_meta } = member
+                const {company, role, name, gender} = user_meta
+                return (<tr key={id}>
+                  <td className="border p-1">{email}</td>
+                  <td className="border p-1">{company?.name}</td>
+                  <td className="border p-1">{name?.first_name}</td>
+                  <td className="border p-1">{name?.last_name}</td>
+                  <td className="border p-1">{role}</td>
+                  <td className="border p-1">{gender}</td>
                 </tr>
-              ))}
+                )
+              })}
             </tbody>
           </table>
         )}
@@ -249,4 +323,4 @@ function AddUser() {
   );
 }
 
-export default AddUser;
+export default Member;
