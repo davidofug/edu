@@ -288,7 +288,7 @@ function Member() {
         </div>
       </div>
       <div className="col-span-6 bg-white p-6">
-        <h1>Members</h1>
+        <h1>Members ({members?.length || 0})</h1>
         {members?.length > 0 && (
           <table className="w-full">
             <thead>
