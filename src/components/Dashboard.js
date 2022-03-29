@@ -5,12 +5,13 @@ import supabase from "./helpers/supabase";
 import { useAuth } from "./hooks/useAuth";
 
 function Dashboard() {
-  const checkinSchema = Yup.object.shape({
+  const checkinSchema = Yup.object().shape({
     backpain: Yup.boolean().required("Required"),
-  })
+  });
   const handleSubmit = (values, { setSubmitting }) => {
     console.log(values);
-  }
+  };
+
   return (
     <section>
       <header>
@@ -39,7 +40,7 @@ function Dashboard() {
               morningexerciseduration: "",
               intensityofexercise: "moderate",
               breakfast: false,
-              breakfastdetails:"",
+              breakfastdetails: "",
             }}
             validationSchema={checkinSchema}
             onSubmit={handleSubmit}
@@ -57,7 +58,7 @@ function Dashboard() {
                 <Field type="radio" name="backpain" id="backpain" value="No" />{" "}
                 No
               </div>
-              <div className="py-2">
+              <div className="py-2 border">
                 <label htmlFor="backpain">Do you have a chestpain?</label>
                 <Field
                   type="radio"
@@ -81,7 +82,8 @@ function Dashboard() {
                   name="cough"
                   id="cough-yes"
                   value="Yes"
-                /> Yes <Field type="radio" name="cough" id="cough-no" value="No" />{" "}
+                />{" "}
+                Yes <Field type="radio" name="cough" id="cough-no" value="No" />{" "}
                 No
               </div>
               <div className="py-2">
@@ -91,7 +93,8 @@ function Dashboard() {
                   name="fever"
                   id="fever-yes"
                   value="Yes"
-                /> Yes <Field type="radio" name="fever" id="fever-no" value="No" />{" "}
+                />{" "}
+                Yes <Field type="radio" name="fever" id="fever-no" value="No" />{" "}
                 No
               </div>
               <div className="py-2">
@@ -101,20 +104,51 @@ function Dashboard() {
                   name="headache"
                   id="headache-yes"
                   value="Yes"
-                /> Yes <Field type="radio" name="headache" id="headache-no" value="No" />{" "}
+                />{" "}
+                Yes{" "}
+                <Field
+                  type="radio"
+                  name="headache"
+                  id="headache-no"
+                  value="No"
+                />{" "}
                 No
               </div>
               <div className="py-2">
-                <label htmlFor="sorethroat">Do you have a sore throat?</label>  <Field type="radio" name="sorethroat" id="sorethroat-yes" value="Yes" /> Yes <Field type="radio" name="sorethroat" id="sorethroat-no" value="No" /> No
+                <label htmlFor="sorethroat">Do you have a sore throat?</label>{" "}
+                <Field
+                  type="radio"
+                  name="sorethroat"
+                  id="sorethroat-yes"
+                  value="Yes"
+                />{" "}
+                Yes{" "}
+                <Field
+                  type="radio"
+                  name="sorethroat"
+                  id="sorethroat-no"
+                  value="No"
+                />{" "}
+                No
               </div>
               <div className="py-2">
-                <label htmlFor="shortnessofbreath">Do you have a shortness of breath?</label>
+                <label htmlFor="shortnessofbreath">
+                  Do you have a shortness of breath?
+                </label>
                 <Field
                   type="radio"
                   name="shortnessofbreath"
                   id="shortnessofbreath-yes"
                   value="Yes"
-                /> Yes <Field type="radio" name="shortnessofbreath" id="shortnessofbreath-no" value="No" /> No
+                />{" "}
+                Yes{" "}
+                <Field
+                  type="radio"
+                  name="shortnessofbreath"
+                  id="shortnessofbreath-no"
+                  value="No"
+                />{" "}
+                No
               </div>
               <div className="py-2">
                 <label htmlFor="sneezing">Do you have a sneezing?</label>
@@ -123,7 +157,15 @@ function Dashboard() {
                   name="sneezing"
                   id="sneezing-yes"
                   value="Yes"
-                /> Yes <Field type="radio" name="sneezing" id="sneezing-no" value="No" /> No
+                />{" "}
+                Yes{" "}
+                <Field
+                  type="radio"
+                  name="sneezing"
+                  id="sneezing-no"
+                  value="No"
+                />{" "}
+                No
               </div>
               <div className="py-2">
                 <label htmlFor="tiredness">Do you have a tiredness?</label>
@@ -132,19 +174,41 @@ function Dashboard() {
                   name="tiredness"
                   id="tiredness-yes"
                   value="Yes"
-                /> Yes <Field type="radio" name="tiredness" id="tiredness-no" value="No" /> No
+                />{" "}
+                Yes{" "}
+                <Field
+                  type="radio"
+                  name="tiredness"
+                  id="tiredness-no"
+                  value="No"
+                />{" "}
+                No
               </div>
               <div className="py-2">
-                <label htmlFor="sleepduration">How long did you sleep last night?</label>
+                <label htmlFor="sleepduration">
+                  How long did you sleep last night?
+                </label>
                 <Field type="text" name="sleepduration" id="sleepduration" />
               </div>
               <div className="py-2">
-                <label htmlFor="morningexerciseduration">How long did you exercise in the morning?</label>
-                <Field type="text" name="morningexerciseduration" id="morningexerciseduration" />
+                <label htmlFor="morningexerciseduration">
+                  How long did you exercise in the morning?
+                </label>
+                <Field
+                  type="text"
+                  name="morningexerciseduration"
+                  id="morningexerciseduration"
+                />
               </div>
               <div className="py-2">
-                <label htmlFor="intensityofexercise">What was the intensity the excercise?</label>
-                <Field type="text" name="intensityofexercise" id="intensityofexercise" />
+                <label htmlFor="intensityofexercise">
+                  What was the intensity the excercise?
+                </label>
+                <Field
+                  type="text"
+                  name="intensityofexercise"
+                  id="intensityofexercise"
+                />
               </div>
               <div className="py-2">
                 <label htmlFor="tiredness">Did you have breakfast?</label>
@@ -153,19 +217,31 @@ function Dashboard() {
                   name="breakfast"
                   id="breakfast-yes"
                   value="Yes"
-                /> Yes <Field type="radio" name="breakfast" id="breakfast-no" value="No" /> No
+                />{" "}
+                Yes{" "}
+                <Field
+                  type="radio"
+                  name="breakfast"
+                  id="breakfast-no"
+                  value="No"
+                />{" "}
+                No
               </div>
               <div className="py-2">
-                <label htmlFor="breakfastdetails">What did you eat for breakfast?</label>
-                <Field type="text" name="breakfastdetails" id="breakfastdetails" />
+                <label htmlFor="breakfastdetails">
+                  What did you eat for breakfast?
+                </label>
+                <Field
+                  type="text"
+                  name="breakfastdetails"
+                  id="breakfastdetails"
+                />
               </div>
               <button type="submit">Submit</button>
             </Form>
           </Formik>
         </aside>
-        <aside>
-
-        </aside>
+        <aside></aside>
       </main>
     </section>
   );
