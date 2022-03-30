@@ -11,12 +11,12 @@ function Layout() {
     setUser(user);
   }, []);
   return (
-    <>
+    <section className="bg-gray-50 light:text-gray-300 dark:bg-black dark:text-gray-300">
       {user ? <PrivateNav /> : <PublicNav />}
       <div className="container mx-auto">
         <Outlet />
       </div>
-    </>
+    </section>
   );
 }
 
