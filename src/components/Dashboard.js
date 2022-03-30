@@ -5,7 +5,6 @@ import supabase from "./helpers/supabase";
 import { useAuth } from "./hooks/useAuth";
 
 function Dashboard() {
-  
   React.useEffect(() => {
     document.title = `${document.title} - Dashboard`;
   }, []);
@@ -21,7 +20,9 @@ function Dashboard() {
     sneezing: Yup.string().required("Required"),
     tiredness: Yup.string().required("Required"),
     sleepduration: Yup.number("Numbers only allowed").required("Required"),
-    morningexerciseduration: Yup.number("Numbers only allowed").required("Required"),
+    morningexerciseduration: Yup.number("Numbers only allowed").required(
+      "Required"
+    ),
     intensityofexercise: Yup.string(),
     breakfast: Yup.string().required("Required"),
     breakfastdetails: Yup.string(),
@@ -37,12 +38,14 @@ function Dashboard() {
       </header>
       <main className="grid gap-4 grid-cols-2 py-10">
         <div className="p-8 rounded-xl bg-white border dark:bg-gray-900 dark:border-gray-800">
-        <h4 className="mb-5 text-xl text-gray-900 font-bold dark:text-gray-300">Start by Checking in!</h4>
-        <p className="text-sm text-gray-500 mb-5">
-          The information will collect helps discover ways of supporting
-          teammates you and help you work effectively. <br /> This information
-          will not be shared with anyone.
-        </p>
+          <h4 className="mb-5 text-xl text-gray-900 font-bold dark:text-gray-300">
+            Start by Checking in!
+          </h4>
+          <p className="text-sm text-gray-500 mb-5">
+            The information will collect helps discover ways of supporting
+            teammates you and help you work effectively. <br /> This information
+            will not be shared with anyone.
+          </p>
           <Formik
             initialValues={{
               backpain: "",
@@ -59,7 +62,7 @@ function Dashboard() {
               intensityofexercise: "",
               breakfast: "",
               breakfastdetails: "",
-              checkin: new Date()
+              checkin: new Date(),
             }}
             validationSchema={checkinSchema}
             onSubmit={handleSubmit}
@@ -779,7 +782,7 @@ function Dashboard() {
                     </div>
                   </div>
                   {errors.breakfast && touched.breakfast && (
-                        <p className="text-red-500 text-xs italic">
+                    <p className="text-red-500 text-xs italic">
                       {errors.breakfast}
                     </p>
                   )}
@@ -800,7 +803,7 @@ function Dashboard() {
                 </div>
                 <div className="pt-8">
                   <button
-                    className="px-4 transition ease-in-out delay-150 bg-white p-2 hover:-translate-y-1 hover:scale-110 hover:bg-orange-100 duration-300 mx-auto max-w-md rounded-full border border-orange-500 dark:border-gray-700"
+                    className="px-4 py-1 transition bg-white hover:-translate-y-1 hover:bg-orange-100 duration-300 mx-auto max-w-md rounded-full border border-orange-500 dark:border-gray-700"
                     type="submit"
                   >
                     Check in
@@ -811,7 +814,7 @@ function Dashboard() {
           </Formik>
         </div>
         <div>
-          <h1>Right</h1>
+          {/* <h1>Right</h1> */}
         </div>
       </main>
     </section>
