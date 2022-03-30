@@ -5,6 +5,11 @@ import supabase from "./helpers/supabase";
 import { useAuth } from "./hooks/useAuth";
 
 function Dashboard() {
+  
+  React.useEffect(() => {
+    document.title = `${document.title} - Dashboard`;
+  }, []);
+
   const checkinSchema = Yup.object().shape({
     backpain: Yup.string().required("Required"),
     chestpain: Yup.string().required("Required"),
