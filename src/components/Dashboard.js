@@ -6,7 +6,20 @@ import { useAuth } from "./hooks/useAuth";
 
 function Dashboard() {
   const checkinSchema = Yup.object().shape({
-    backpain: Yup.boolean().required("Required"),
+    backpain: Yup.string().required("Required"),
+    chestpain: Yup.string().required("Required"),
+    cough: Yup.string().required("Required"),
+    fever: Yup.string().required("Required"),
+    headache: Yup.string().required("Required"),
+    sorethroat: Yup.string().required("Required"),
+    shortnessofbreath: Yup.string().required("Required"),
+    sneezing: Yup.string().required("Required"),
+    tiredness: Yup.string().required("Required"),
+    sleepduration: Yup.number("Numbers only allowed").required("Required"),
+    morningexerciseduration: Yup.number("Numbers only allowed").required("Required"),
+    intensityofexercise: Yup.string(),
+    breakfast: Yup.string().required("Required"),
+    breakfastdetails: Yup.string(),
   });
   const handleSubmit = (values, { setSubmitting }) => {
     console.log(values);
@@ -16,232 +29,788 @@ function Dashboard() {
     <section>
       <header>
         <h1>Dashboard</h1>
+        <h1 className="text-xl">Start by Checking in!</h1>
+        <p className="text-sm text-gray-500">
+          The information will collect helps discover ways of supporting
+          teammates you and help you work effectively. <br /> This information
+          will not be shared with anyone.
+        </p>
       </header>
-      <main className="grid-col-12">
-        <aside>
-          <h1 className="text-xl">Start your Day here!</h1>
-          <p className="text-sm text-gray-400">
-            The information will collect helps discover ways of supporting
-            teammates you and help you work effectively. <br /> This information
-            will not be shared with anyone.
-          </p>
+      <main className="grid gap-4 grid-cols-2 py-10">
+        <div className="p-8 rounded-xl bg-white border dark:bg-gray-900 dark:border-gray-800">
+          <h4 className="mb-5 text-xl text-gray-900 font-bold dark:text-gray-300">
+            Check in details
+          </h4>
           <Formik
             initialValues={{
-              backpain: false,
-              chestpain: false,
-              cough: false,
-              fever: false,
-              headache: false,
-              sorethroat: false,
-              shortnessofbreath: false,
-              sneezing: false,
-              tiredness: false,
+              backpain: "",
+              chestpain: "",
+              cough: "",
+              fever: "",
+              headache: "",
+              sorethroat: "",
+              shortnessofbreath: "",
+              sneezing: "",
+              tiredness: "",
               sleepduration: "",
               morningexerciseduration: "",
-              intensityofexercise: "moderate",
-              breakfast: false,
+              intensityofexercise: "",
+              breakfast: "",
               breakfastdetails: "",
+              checkin: new Date()
             }}
             validationSchema={checkinSchema}
             onSubmit={handleSubmit}
           >
-            <Form>
-              <div className="py-2 border">
-                <label htmlFor="backpain">Do you have a backpain?</label>
-                <Field
-                  type="radio"
-                  name="backpain"
-                  id="backpain"
-                  value="Yes"
-                />{" "}
-                Yes{" "}
-                <Field type="radio" name="backpain" id="backpain" value="No" />{" "}
-                No
-              </div>
-              <div className="py-2 border">
-                <label htmlFor="backpain">Do you have a chestpain?</label>
-                <Field
-                  type="radio"
-                  name="chestpain"
-                  id="chestpain-yes"
-                  value="Yes"
-                />{" "}
-                Yes{" "}
-                <Field
-                  type="radio"
-                  name="chestpain"
-                  id="chestpain-no"
-                  value="No"
-                />{" "}
-                No
-              </div>
-              <div className="py-2">
-                <label htmlFor="cough">Do you have a cough?</label>
-                <Field
-                  type="radio"
-                  name="cough"
-                  id="cough-yes"
-                  value="Yes"
-                />{" "}
-                Yes <Field type="radio" name="cough" id="cough-no" value="No" />{" "}
-                No
-              </div>
-              <div className="py-2">
-                <label htmlFor="fever">Do you have a fever?</label>
-                <Field
-                  type="radio"
-                  name="fever"
-                  id="fever-yes"
-                  value="Yes"
-                />{" "}
-                Yes <Field type="radio" name="fever" id="fever-no" value="No" />{" "}
-                No
-              </div>
-              <div className="py-2">
-                <label htmlFor="headache">Do you have a headache?</label>
-                <Field
-                  type="radio"
-                  name="headache"
-                  id="headache-yes"
-                  value="Yes"
-                />{" "}
-                Yes{" "}
-                <Field
-                  type="radio"
-                  name="headache"
-                  id="headache-no"
-                  value="No"
-                />{" "}
-                No
-              </div>
-              <div className="py-2">
-                <label htmlFor="sorethroat">Do you have a sore throat?</label>{" "}
-                <Field
-                  type="radio"
-                  name="sorethroat"
-                  id="sorethroat-yes"
-                  value="Yes"
-                />{" "}
-                Yes{" "}
-                <Field
-                  type="radio"
-                  name="sorethroat"
-                  id="sorethroat-no"
-                  value="No"
-                />{" "}
-                No
-              </div>
-              <div className="py-2">
-                <label htmlFor="shortnessofbreath">
-                  Do you have a shortness of breath?
-                </label>
-                <Field
-                  type="radio"
-                  name="shortnessofbreath"
-                  id="shortnessofbreath-yes"
-                  value="Yes"
-                />{" "}
-                Yes{" "}
-                <Field
-                  type="radio"
-                  name="shortnessofbreath"
-                  id="shortnessofbreath-no"
-                  value="No"
-                />{" "}
-                No
-              </div>
-              <div className="py-2">
-                <label htmlFor="sneezing">Do you have a sneezing?</label>
-                <Field
-                  type="radio"
-                  name="sneezing"
-                  id="sneezing-yes"
-                  value="Yes"
-                />{" "}
-                Yes{" "}
-                <Field
-                  type="radio"
-                  name="sneezing"
-                  id="sneezing-no"
-                  value="No"
-                />{" "}
-                No
-              </div>
-              <div className="py-2">
-                <label htmlFor="tiredness">Do you have a tiredness?</label>
-                <Field
-                  type="radio"
-                  name="tiredness"
-                  id="tiredness-yes"
-                  value="Yes"
-                />{" "}
-                Yes{" "}
-                <Field
-                  type="radio"
-                  name="tiredness"
-                  id="tiredness-no"
-                  value="No"
-                />{" "}
-                No
-              </div>
-              <div className="py-2">
-                <label htmlFor="sleepduration">
-                  How long did you sleep last night?
-                </label>
-                <Field type="text" name="sleepduration" id="sleepduration" />
-              </div>
-              <div className="py-2">
-                <label htmlFor="morningexerciseduration">
-                  How long did you exercise in the morning?
-                </label>
-                <Field
-                  type="text"
-                  name="morningexerciseduration"
-                  id="morningexerciseduration"
-                />
-              </div>
-              <div className="py-2">
-                <label htmlFor="intensityofexercise">
-                  What was the intensity the excercise?
-                </label>
-                <Field
-                  type="text"
-                  name="intensityofexercise"
-                  id="intensityofexercise"
-                />
-              </div>
-              <div className="py-2">
-                <label htmlFor="tiredness">Did you have breakfast?</label>
-                <Field
-                  type="radio"
-                  name="breakfast"
-                  id="breakfast-yes"
-                  value="Yes"
-                />{" "}
-                Yes{" "}
-                <Field
-                  type="radio"
-                  name="breakfast"
-                  id="breakfast-no"
-                  value="No"
-                />{" "}
-                No
-              </div>
-              <div className="py-2">
-                <label htmlFor="breakfastdetails">
-                  What did you eat for breakfast?
-                </label>
-                <Field
-                  type="text"
-                  name="breakfastdetails"
-                  id="breakfastdetails"
-                />
-              </div>
-              <button type="submit">Submit</button>
-            </Form>
+            {({ errors, touched }) => (
+              <Form>
+                <div className="py-2 m-5 max-w-md mx-auto">
+                  <p className="mb-2 text-sm font-semibold">
+                    Do you have backpain?
+                  </p>
+                  <div className="grid grid-cols-3 gap-x-5 max-w-md mx-auto">
+                    <div className="relative">
+                      <Field
+                        className="sr-only peer"
+                        type="radio"
+                        value="Yes"
+                        name="backpain"
+                        id="backpain_yes"
+                      />
+                      <label
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        htmlFor="backpain_yes"
+                      >
+                        Yes
+                      </label>
+                      <div className="absolute hidden w-5 h-2 peer-checked:block top-2 right-3">
+                        👍
+                      </div>
+                    </div>
+                    <div className="relative">
+                      <Field
+                        className="sr-only peer"
+                        type="radio"
+                        value="No"
+                        name="backpain"
+                        id="backpain_no"
+                      />
+                      <label
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-red-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        htmlFor="backpain_no"
+                      >
+                        No
+                      </label>
+                      <div className="absolute hidden w-5 h-2 peer-checked:block top-2 right-3">
+                        👎
+                      </div>
+                    </div>
+                    <div className="relative">
+                      <Field
+                        className="sr-only peer"
+                        type="radio"
+                        value="Not sure"
+                        name="backpain"
+                        id="backpain_notsure"
+                      />
+                      <label
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-yellow-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        htmlFor="backpain_notsure"
+                      >
+                        Not sure
+                      </label>
+                      <div className="absolute hidden w-5 h-2 peer-checked:block top-2 right-3">
+                        🤔
+                      </div>
+                    </div>
+                  </div>
+                  {errors.backpain && touched.backpain && (
+                    <p className="text-red-500 text-xs italic">
+                      {errors.backpain}
+                    </p>
+                  )}
+                </div>
+                <div className="py-2 m-5 max-w-md mx-auto">
+                  <p className="mb-2 text-sm font-semibold">
+                    Do you have chestpain?
+                  </p>
+                  <div className="grid grid-cols-3 gap-x-5 max-w-md mx-auto">
+                    <div className="relative">
+                      <Field
+                        className="sr-only peer"
+                        type="radio"
+                        value="Yes"
+                        name="chestpain"
+                        id="chestpain_yes"
+                      />
+                      <label
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        htmlFor="chestpain_yes"
+                      >
+                        Yes
+                      </label>
+                      <div className="absolute hidden w-5 h-2 peer-checked:block top-2 right-3">
+                        👍
+                      </div>
+                    </div>
+                    <div className="relative">
+                      <Field
+                        className="sr-only peer"
+                        type="radio"
+                        value="No"
+                        name="chestpain"
+                        id="chestpain_no"
+                      />
+                      <label
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-red-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        htmlFor="chestpain_no"
+                      >
+                        No
+                      </label>
+                      <div className="absolute hidden w-5 h-2 peer-checked:block top-2 right-3">
+                        👎
+                      </div>
+                    </div>
+                    <div className="relative">
+                      <Field
+                        className="sr-only peer"
+                        type="radio"
+                        value="Not sure"
+                        name="chestpain"
+                        id="chestpain_notsure"
+                      />
+                      <label
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-yellow-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        htmlFor="chestpain_notsure"
+                      >
+                        Not sure
+                      </label>
+                      <div className="absolute hidden w-5 h-2 peer-checked:block top-2 right-3">
+                        🤔
+                      </div>
+                    </div>
+                  </div>
+                  {errors.chestpain && touched.chestpain && (
+                    <p className="text-red-500 text-xs italic">
+                      {errors.chestpain}
+                    </p>
+                  )}
+                </div>
+                <div className="py-2 m-5 max-w-md mx-auto">
+                  <p className="mb-2 text-sm font-semibold">
+                    Do you have a cough?
+                  </p>
+                  <div className="grid grid-cols-3 gap-x-5 max-w-md mx-auto">
+                    <div className="relative">
+                      <Field
+                        className="sr-only peer"
+                        type="radio"
+                        value="Yes"
+                        name="cough"
+                        id="cough_yes"
+                      />
+                      <label
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700  border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        htmlFor="cough_yes"
+                      >
+                        Yes
+                      </label>
+                      <div className="absolute hidden w-5 h-2 peer-checked:block top-2 right-3">
+                        👍
+                      </div>
+                    </div>
+                    <div className="relative">
+                      <Field
+                        className="sr-only peer"
+                        type="radio"
+                        value="No"
+                        name="cough"
+                        id="cough_no"
+                      />
+                      <label
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-red-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        htmlFor="cough_no"
+                      >
+                        No
+                      </label>
+                      <div className="absolute hidden w-5 h-2 peer-checked:block top-2 right-3">
+                        👎
+                      </div>
+                    </div>
+                    <div className="relative">
+                      <Field
+                        className="sr-only peer"
+                        type="radio"
+                        value="Not sure"
+                        name="cough"
+                        id="cough_notsure"
+                      />
+                      <label
+                        className="flex p-2 bg-gray-100 border dark:bg-gray-800 dark:border-gray-700 border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-yellow-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        htmlFor="cough_notsure"
+                      >
+                        Not sure
+                      </label>
+                      <div className="absolute hidden w-5 h-2 peer-checked:block top-2 right-3">
+                        🤔
+                      </div>
+                    </div>
+                  </div>
+                  {errors.cough && touched.cough && (
+                    <p className="text-red-500 text-xs italic">
+                      {errors.cough}
+                    </p>
+                  )}
+                </div>
+                <div className="py-2 m-5 max-w-md mx-auto">
+                  <p className="mb-2 text-sm font-semibold">
+                    Do you have a fever?
+                  </p>
+                  <div className="grid grid-cols-3 gap-x-5 max-w-md mx-auto">
+                    <div className="relative">
+                      <Field
+                        className="sr-only peer"
+                        type="radio"
+                        value="Yes"
+                        name="fever"
+                        id="fever_yes"
+                      />
+                      <label
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        htmlFor="fever_yes"
+                      >
+                        Yes
+                      </label>
+                      <div className="absolute hidden w-5 h-2 peer-checked:block top-2 right-3">
+                        👍
+                      </div>
+                    </div>
+                    <div className="relative">
+                      <Field
+                        className="sr-only peer"
+                        type="radio"
+                        value="No"
+                        name="fever"
+                        id="fever_no"
+                      />
+                      <label
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700  border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-red-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        htmlFor="fever_no"
+                      >
+                        No
+                      </label>
+                      <div className="absolute hidden w-5 h-2 peer-checked:block top-2 right-3">
+                        👎
+                      </div>
+                    </div>
+                    <div className="relative">
+                      <Field
+                        className="sr-only peer"
+                        type="radio"
+                        value="Not sure"
+                        name="fever"
+                        id="fever_notsure"
+                      />
+                      <label
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-yellow-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        htmlFor="fever_notsure"
+                      >
+                        Not sure
+                      </label>
+                      <div className="absolute hidden w-5 h-2 peer-checked:block top-2 right-3">
+                        🤔
+                      </div>
+                    </div>
+                  </div>
+                  {errors.fever && touched.fever && (
+                    <p className="text-red-500 text-xs italic">
+                      {errors.fever}
+                    </p>
+                  )}
+                </div>
+                <div className="py-2 m-5 max-w-md mx-auto">
+                  <p className="mb-2 text-sm font-semibold">
+                    Do you have a headache?
+                  </p>
+                  <div className="grid grid-cols-3 gap-x-5 max-w-md mx-auto">
+                    <div className="relative">
+                      <Field
+                        className="sr-only peer"
+                        type="radio"
+                        value="Yes"
+                        name="headache"
+                        id="headache_yes"
+                      />
+                      <label
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        htmlFor="headache_yes"
+                      >
+                        Yes
+                      </label>
+                      <div className="absolute hidden w-5 h-2 peer-checked:block top-2 right-3">
+                        👍
+                      </div>
+                    </div>
+                    <div className="relative">
+                      <Field
+                        className="sr-only peer"
+                        type="radio"
+                        value="No"
+                        name="headache"
+                        id="headache_no"
+                      />
+                      <label
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-red-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        htmlFor="headache_no"
+                      >
+                        No
+                      </label>
+                      <div className="absolute hidden w-5 h-2 peer-checked:block top-2 right-3">
+                        👎
+                      </div>
+                    </div>
+                    <div className="relative">
+                      <Field
+                        className="sr-only peer"
+                        type="radio"
+                        value="Not sure"
+                        name="headache"
+                        id="headache_notsure"
+                      />
+                      <label
+                        className="flex p-2 bg-gray-100 border dark:bg-gray-800 dark:border-gray-700 border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-yellow-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        htmlFor="headache_notsure"
+                      >
+                        Not sure
+                      </label>
+                      <div className="absolute hidden w-5 h-2 peer-checked:block top-2 right-3">
+                        🤔
+                      </div>
+                    </div>
+                  </div>
+                  {errors.headache && touched.headache && (
+                    <p className="text-red-500 text-xs italic">
+                      {errors.headache}
+                    </p>
+                  )}
+                </div>
+                <div className="py-2 m-5 max-w-md mx-auto">
+                  <p className="mb-2 text-sm font-semibold">
+                    Do you have a sore throat?
+                  </p>
+                  <div className="grid grid-cols-3 gap-x-5 max-w-md mx-auto">
+                    <div className="relative">
+                      <Field
+                        className="sr-only peer"
+                        type="radio"
+                        value="Yes"
+                        name="sorethroat"
+                        id="sorethroat_yes"
+                      />
+                      <label
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        htmlFor="sorethroat_yes"
+                      >
+                        Yes
+                      </label>
+                      <div className="absolute hidden w-5 h-2 peer-checked:block top-2 right-3">
+                        👍
+                      </div>
+                    </div>
+                    <div className="relative">
+                      <Field
+                        className="sr-only peer"
+                        type="radio"
+                        value="No"
+                        name="sorethroat"
+                        id="sorethroat_no"
+                      />
+                      <label
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-red-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        htmlFor="sorethroat_no"
+                      >
+                        No
+                      </label>
+                      <div className="absolute hidden w-5 h-2 peer-checked:block top-2 right-3">
+                        👎
+                      </div>
+                    </div>
+                    <div className="relative">
+                      <Field
+                        className="sr-only peer"
+                        type="radio"
+                        value="Not sure"
+                        name="sorethroat"
+                        id="sorethroat_notsure"
+                      />
+                      <label
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-yellow-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        htmlFor="sorethroat_notsure"
+                      >
+                        Not sure
+                      </label>
+                      <div className="absolute hidden w-5 h-2 peer-checked:block top-2 right-3">
+                        🤔
+                      </div>
+                    </div>
+                  </div>
+                  {errors.sorethroat && touched.sorethroat && (
+                    <p className="text-red-500 text-xs italic">
+                      {errors.sorethroat}
+                    </p>
+                  )}
+                </div>
+                <div className="py-2 m-5 max-w-md mx-auto">
+                  <p className="mb-2 text-sm font-semibold">
+                    Do you have a shortness of breath?
+                  </p>
+                  <div className="grid grid-cols-3 gap-x-5 max-w-md mx-auto">
+                    <div className="relative">
+                      <Field
+                        className="sr-only peer"
+                        type="radio"
+                        value="Yes"
+                        name="shortnessofbreath"
+                        id="shortnessofbreath_yes"
+                      />
+                      <label
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        htmlFor="shortnessofbreath_yes"
+                      >
+                        Yes
+                      </label>
+                      <div className="absolute hidden w-5 h-2 peer-checked:block top-2 right-3">
+                        👍
+                      </div>
+                    </div>
+                    <div className="relative">
+                      <Field
+                        className="sr-only peer"
+                        type="radio"
+                        value="No"
+                        name="shortnessofbreath"
+                        id="shortnessofbreath_no"
+                      />
+                      <label
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border dark:bg-gray-800 dark:border-gray-700 border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-red-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        htmlFor="shortnessofbreath_no"
+                      >
+                        No
+                      </label>
+                      <div className="absolute hidden w-5 h-2 peer-checked:block top-2 right-3">
+                        👎
+                      </div>
+                    </div>
+                    <div className="relative">
+                      <Field
+                        className="sr-only peer"
+                        type="radio"
+                        value="Not sure"
+                        name="shortnessofbreath"
+                        id="shortnessofbreath_notsure"
+                      />
+                      <label
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-yellow-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        htmlFor="shortnessofbreath_notsure"
+                      >
+                        Not sure
+                      </label>
+                      <div className="absolute hidden w-5 h-2 peer-checked:block top-2 right-3">
+                        🤔
+                      </div>
+                    </div>
+                  </div>
+                  {errors.shortnessofbreath && touched.shortnessofbreath && (
+                    <p className="text-red-500 text-xs italic">
+                      {errors.shortnessofbreath}
+                    </p>
+                  )}
+                </div>
+                <div className="py-2 m-5 max-w-md mx-auto">
+                  <p className="mb-2 text-sm font-semibold">
+                    Are you sneezing?
+                  </p>
+                  <div className="grid grid-cols-3 gap-x-5 max-w-md mx-auto">
+                    <div className="relative">
+                      <Field
+                        className="sr-only peer"
+                        type="radio"
+                        value="Yes"
+                        name="sneezing"
+                        id="sneezing_yes"
+                      />
+                      <label
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        htmlFor="sneezing_yes"
+                      >
+                        Yes
+                      </label>
+                      <div className="absolute hidden w-5 h-2 peer-checked:block top-2 right-3">
+                        👍
+                      </div>
+                    </div>
+                    <div className="relative">
+                      <Field
+                        className="sr-only peer"
+                        type="radio"
+                        value="No"
+                        name="sneezing"
+                        id="sneezing_no"
+                      />
+                      <label
+                        className="flex p-2 bg-gray-100 border dark:bg-gray-800 dark:border-gray-700 border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-red-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        htmlFor="sneezing_no"
+                      >
+                        No
+                      </label>
+                      <div className="absolute hidden w-5 h-2 peer-checked:block top-2 right-3">
+                        👎
+                      </div>
+                    </div>
+                    <div className="relative">
+                      <Field
+                        className="sr-only peer"
+                        type="radio"
+                        value="Not sure"
+                        name="sneezing"
+                        id="sneezing_notsure"
+                      />
+                      <label
+                        className="flex p-2 bg-gray-100 border dark:bg-gray-800 dark:border-gray-700 border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-yellow-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        htmlFor="sneezing_notsure"
+                      >
+                        Not sure
+                      </label>
+                      <div className="absolute hidden w-5 h-2 peer-checked:block top-2 right-3">
+                        🤔
+                      </div>
+                    </div>
+                  </div>
+                  {errors.sneezing && touched.sneezing && (
+                    <p className="text-red-500 text-xs italic">
+                      {errors.sneezing}
+                    </p>
+                  )}
+                </div>
+                <div className="py-2 m-5 max-w-md mx-auto">
+                  <label className="mb-2 text-sm font-semibold block">
+                    Do you feel tired?
+                  </label>
+                  <div className="grid grid-cols-3 gap-x-5 max-w-md mx-auto">
+                    <div className="relative">
+                      <Field
+                        className="sr-only peer"
+                        type="radio"
+                        value="Yes"
+                        name="tiredness"
+                        id="tiredness_yes"
+                      />
+                      <label
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        htmlFor="tiredness_yes"
+                      >
+                        Yes
+                      </label>
+                      <div className="absolute hidden w-5 h-2 peer-checked:block top-2 right-3">
+                        👍
+                      </div>
+                    </div>
+                    <div className="relative">
+                      <Field
+                        className="sr-only peer"
+                        type="radio"
+                        value="No"
+                        name="tiredness"
+                        id="tiredness_no"
+                      />
+                      <label
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-red-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        htmlFor="tiredness_no"
+                      >
+                        No
+                      </label>
+                      <div className="absolute hidden w-5 h-2 peer-checked:block top-2 right-3">
+                        👎
+                      </div>
+                    </div>
+                    <div className="relative">
+                      <Field
+                        className="sr-only peer"
+                        type="radio"
+                        value="Not sure"
+                        name="tiredness"
+                        id="tiredness_notsure"
+                      />
+                      <label
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-yellow-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        htmlFor="tiredness_notsure"
+                      >
+                        Not sure
+                      </label>
+                      <div className="absolute hidden w-5 h-2 peer-checked:block top-2 right-3">
+                        🤔
+                      </div>
+                    </div>
+                  </div>
+                  {errors.sneezing && touched.sneezing && (
+                    <p className="text-red-500 text-xs italic">
+                      {errors.sneezing}
+                    </p>
+                  )}
+                </div>
+                <div className="py-2 max-w-md mx-auto">
+                  <label
+                    className="mb-2 text-sm font-semibold block"
+                    htmlFor="sleepduration"
+                  >
+                    How long did you sleep last night?
+                  </label>
+                  <Field
+                    className="outline-0 p-3 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 w-full rounded-lg"
+                    type="text"
+                    name="sleepduration"
+                    id="sleepduration"
+                  />
+                  {errors.sleepduration && touched.sleepduration && (
+                    <p className="text-red-500 text-xs italic">
+                      {errors.sleepduration}
+                    </p>
+                  )}
+                </div>
+                <div className="py-2 max-w-md mx-auto">
+                  <label
+                    className="block mb-2 text-sm font-semibold"
+                    htmlFor="morningexerciseduration"
+                  >
+                    How long did you exercise in the morning?
+                  </label>
+                  <Field
+                    className="outline-0 p-3 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 w-full rounded-lg"
+                    type="text"
+                    name="morningexerciseduration"
+                    id="morningexerciseduration"
+                  />
+                  {errors.morningexerciseduration &&
+                    touched.morningexerciseduration && (
+                      <p className="text-red-500 text-xs italic">
+                        {errors.morningexerciseduration}
+                      </p>
+                    )}
+                </div>
+                <div className="m-5 max-w-md mx-auto">
+                  <label
+                    className="block mb-2 text-sm font-semibold"
+                    htmlFor="intensityofexercise"
+                  >
+                    How do you describe the intensity of the excercise?
+                  </label>
+                  <Field
+                    className="p-3 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 w-full rounded-lg"
+                    as="select"
+                    name="intensityofexercise"
+                    id="intensityofexercise"
+                  >
+                    <option value="">- Select -</option>
+                    <option value="Moderate">Moderate</option>
+                    <option value="Intense">Intense</option>
+                    <option value="Not sure">Not sure</option>
+                  </Field>
+                </div>
+                <div className="py-2 m-5 max-w-md mx-auto">
+                  <label className="mb-2 text-sm font-semibold block">
+                    Did you have breakfast?
+                  </label>
+                  <div className="grid grid-cols-3 gap-x-5 max-w-md mx-auto">
+                    <div className="relative">
+                      <Field
+                        className="sr-only peer"
+                        type="radio"
+                        value="Yes"
+                        name="breakfast"
+                        id="breakfast_yes"
+                      />
+                      <label
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        htmlFor="breakfast_yes"
+                      >
+                        Yes
+                      </label>
+                      <div className="absolute hidden w-5 h-2 peer-checked:block top-2 right-3">
+                        👍
+                      </div>
+                    </div>
+                    <div className="relative">
+                      <Field
+                        className="sr-only peer"
+                        type="radio"
+                        value="No"
+                        name="breakfast"
+                        id="breakfast_no"
+                      />
+                      <label
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-red-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        htmlFor="breakfast_no"
+                      >
+                        No
+                      </label>
+                      <div className="absolute hidden w-5 h-2 peer-checked:block top-2 right-3">
+                        👎
+                      </div>
+                    </div>
+                    <div className="relative">
+                      <Field
+                        className="sr-only peer"
+                        type="radio"
+                        value="maybe"
+                        name="breakfast"
+                        id="breakfast_maybe"
+                      />
+                      <label
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-yellow-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        htmlFor="breakfast_maybe"
+                      >
+                        Maybe
+                      </label>
+                      <div className="absolute hidden w-5 h-2 peer-checked:block top-2 right-3">
+                        🤔
+                      </div>
+                    </div>
+                  </div>
+                  {errors.breakfast && touched.breakfast && (
+                        <p className="text-red-500 text-xs italic">
+                      {errors.breakfast}
+                    </p>
+                  )}
+                </div>
+                <div className="py-2 m-5 max-w-md mx-auto">
+                  <label
+                    className="mb-2 text-sm font-semibold block"
+                    htmlFor="breakfastdetails"
+                  >
+                    What did you eat for breakfast?
+                  </label>
+                  <Field
+                    className="p-3 outline-0 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 w-full rounded-lg"
+                    as="textarea"
+                    name="breakfastdetails"
+                    id="breakfastdetails"
+                  />
+                </div>
+                <div className="max-w-md mx-auto">
+                  <button
+                    className="px-4 transition ease-in-out delay-150 bg-white p-2 hover:-translate-y-1 hover:scale-110 hover:bg-orange-100 duration-300 mx-auto max-w-md rounded-full border border-orange-500 dark:border-gray-700"
+                    type="submit"
+                  >
+                    Check in
+                  </button>
+                </div>
+              </Form>
+            )}
           </Formik>
-        </aside>
-        <aside></aside>
+        </div>
+        <div>
+          <h1>Right</h1>
+        </div>
       </main>
     </section>
   );
