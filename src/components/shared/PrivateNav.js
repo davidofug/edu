@@ -69,7 +69,7 @@ function PrivateNav() {
         <div>
           <Link
             to="#"
-            className="inline-block text-sm px-4 py-2 leading-none border rounded text-black border-black hover:border-transparent hover:text-orange-400 hover:bg-black mt-4 lg:mt-0"
+            className="px-4 py-1 transition bg-white hover:-translate-y-1 hover:bg-orange-100 duration-300 mx-auto max-w-md rounded-full border border-orange-500 dark:border-gray-700"
             onClick={() => {
               signOut(setUser);
               navigate("/", { replace: true });

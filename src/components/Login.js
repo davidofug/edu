@@ -30,8 +30,8 @@ function Login() {
     <Navigate to={from} replace />
   ) : (
     <div className="flex flex-col justify-center items-center h-screen">
-      <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-        <h1 className="text-center text-2xl mb-4">Login</h1>
+      <div className="bg-white border rounded-lg px-8 pt-6 pb-8 mb-4">
+        <h1 className="text-center font-semibold text-2xl mb-4">Login</h1>
         {errorMsg && <p className="text-red-500">{errorMsg}</p>}
         <Formik
           initialValues={{ email: "", password: "" }}
@@ -56,7 +56,7 @@ function Login() {
                   E-mail
                 </label>
                 <Field
-                  className="shadow appearance-none border rounded w-full py-2 px-3 mb-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  className="p-2 appearance-none leading-tight focus:border-orange-400 focus:bg-white focus:outline-none focus:shadow-outline outline-0 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 w-full rounded-lg"
                   id="email"
                   name="email"
                   type="text"
@@ -74,7 +74,7 @@ function Login() {
                   Password
                 </label>
                 <Field
-                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                  className="p-2 appearance-none leading-tight focus:border-orange-400 focus:bg-white focus:outline-none focus:shadow-outline outline-0 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 w-full rounded-lg"
                   id="password"
                   name="password"
                   type="password"
@@ -88,13 +88,13 @@ function Login() {
               </div>
               <div className="flex items-center justify-between">
                 <button
-                  className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                  className="px-4 py-1 transition bg-white hover:-translate-y-1 hover:bg-orange-100 duration-300 mx-auto max-w-md rounded-full border border-orange-500 dark:border-gray-700"
                   type="submit"
                 >
                   Sign In
                 </button>
                 <a
-                  className="inline-block align-baseline font-bold text-sm text-orange-400 hover:text-orange-500"
+                  className="inline-block align-baseline font-semibold text-sm text-orange-500 hover:text-orange-600"
                   href="#"
                 >
                   Forgot Password?
