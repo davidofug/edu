@@ -29,18 +29,15 @@ function Dashboard() {
     <section>
       <header>
         <h1>Dashboard</h1>
-        <h1 className="text-xl">Start by Checking in!</h1>
-        <p className="text-sm text-gray-500">
+      </header>
+      <main className="grid gap-4 grid-cols-2 py-10">
+        <div className="p-8 rounded-xl bg-white border dark:bg-gray-900 dark:border-gray-800">
+        <h4 className="mb-5 text-xl text-gray-900 font-bold dark:text-gray-300">Start by Checking in!</h4>
+        <p className="text-sm text-gray-500 mb-5">
           The information will collect helps discover ways of supporting
           teammates you and help you work effectively. <br /> This information
           will not be shared with anyone.
         </p>
-      </header>
-      <main className="grid gap-4 grid-cols-2 py-10">
-        <div className="p-8 rounded-xl bg-white border dark:bg-gray-900 dark:border-gray-800">
-          <h4 className="mb-5 text-xl text-gray-900 font-bold dark:text-gray-300">
-            Check in details
-          </h4>
           <Formik
             initialValues={{
               backpain: "",
