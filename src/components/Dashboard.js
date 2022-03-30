@@ -64,11 +64,11 @@ function Dashboard() {
           >
             {({ errors, touched }) => (
               <Form>
-                <div className="py-2 m-5 max-w-md mx-auto">
+                <div className="py-2">
                   <p className="mb-2 text-sm font-semibold">
                     Do you have backpain?
                   </p>
-                  <div className="grid grid-cols-3 gap-x-5 max-w-md mx-auto">
+                  <div className="grid grid-cols-3 gap-x-5">
                     <div className="relative">
                       <Field
                         className="sr-only peer"
@@ -130,11 +130,11 @@ function Dashboard() {
                     </p>
                   )}
                 </div>
-                <div className="py-2 m-5 max-w-md mx-auto">
+                <div className="py-2">
                   <p className="mb-2 text-sm font-semibold">
                     Do you have chestpain?
                   </p>
-                  <div className="grid grid-cols-3 gap-x-5 max-w-md mx-auto">
+                  <div className="grid grid-cols-3 gap-x-5 ">
                     <div className="relative">
                       <Field
                         className="sr-only peer"
@@ -196,11 +196,11 @@ function Dashboard() {
                     </p>
                   )}
                 </div>
-                <div className="py-2 m-5 max-w-md mx-auto">
+                <div className="py-2">
                   <p className="mb-2 text-sm font-semibold">
                     Do you have a cough?
                   </p>
-                  <div className="grid grid-cols-3 gap-x-5 max-w-md mx-auto">
+                  <div className="grid grid-cols-3 gap-x-5 ">
                     <div className="relative">
                       <Field
                         className="sr-only peer"
@@ -262,11 +262,11 @@ function Dashboard() {
                     </p>
                   )}
                 </div>
-                <div className="py-2 m-5 max-w-md mx-auto">
+                <div className="py-2">
                   <p className="mb-2 text-sm font-semibold">
                     Do you have a fever?
                   </p>
-                  <div className="grid grid-cols-3 gap-x-5 max-w-md mx-auto">
+                  <div className="grid grid-cols-3 gap-x-5 ">
                     <div className="relative">
                       <Field
                         className="sr-only peer"
@@ -328,11 +328,11 @@ function Dashboard() {
                     </p>
                   )}
                 </div>
-                <div className="py-2 m-5 max-w-md mx-auto">
+                <div className="py-2">
                   <p className="mb-2 text-sm font-semibold">
                     Do you have a headache?
                   </p>
-                  <div className="grid grid-cols-3 gap-x-5 max-w-md mx-auto">
+                  <div className="grid grid-cols-3 gap-x-5 ">
                     <div className="relative">
                       <Field
                         className="sr-only peer"
@@ -394,11 +394,11 @@ function Dashboard() {
                     </p>
                   )}
                 </div>
-                <div className="py-2 m-5 max-w-md mx-auto">
+                <div className="py-2">
                   <p className="mb-2 text-sm font-semibold">
                     Do you have a sore throat?
                   </p>
-                  <div className="grid grid-cols-3 gap-x-5 max-w-md mx-auto">
+                  <div className="grid grid-cols-3 gap-x-5 ">
                     <div className="relative">
                       <Field
                         className="sr-only peer"
@@ -460,11 +460,11 @@ function Dashboard() {
                     </p>
                   )}
                 </div>
-                <div className="py-2 m-5 max-w-md mx-auto">
+                <div className="py-2">
                   <p className="mb-2 text-sm font-semibold">
                     Do you have a shortness of breath?
                   </p>
-                  <div className="grid grid-cols-3 gap-x-5 max-w-md mx-auto">
+                  <div className="grid grid-cols-3 gap-x-5 ">
                     <div className="relative">
                       <Field
                         className="sr-only peer"
@@ -526,11 +526,11 @@ function Dashboard() {
                     </p>
                   )}
                 </div>
-                <div className="py-2 m-5 max-w-md mx-auto">
+                <div className="py-2">
                   <p className="mb-2 text-sm font-semibold">
                     Are you sneezing?
                   </p>
-                  <div className="grid grid-cols-3 gap-x-5 max-w-md mx-auto">
+                  <div className="grid grid-cols-3 gap-x-5 ">
                     <div className="relative">
                       <Field
                         className="sr-only peer"
@@ -592,11 +592,11 @@ function Dashboard() {
                     </p>
                   )}
                 </div>
-                <div className="py-2 m-5 max-w-md mx-auto">
+                <div className="py-2">
                   <label className="mb-2 text-sm font-semibold block">
                     Do you feel tired?
                   </label>
-                  <div className="grid grid-cols-3 gap-x-5 max-w-md mx-auto">
+                  <div className="grid grid-cols-3 gap-x-5 ">
                     <div className="relative">
                       <Field
                         className="sr-only peer"
@@ -658,7 +658,7 @@ function Dashboard() {
                     </p>
                   )}
                 </div>
-                <div className="py-2 max-w-md mx-auto">
+                <div className="py-2 ">
                   <label
                     className="mb-2 text-sm font-semibold block"
                     htmlFor="sleepduration"
@@ -677,7 +677,7 @@ function Dashboard() {
                     </p>
                   )}
                 </div>
-                <div className="py-2 max-w-md mx-auto">
+                <div className="py-2 ">
                   <label
                     className="block mb-2 text-sm font-semibold"
                     htmlFor="morningexerciseduration"
@@ -697,7 +697,7 @@ function Dashboard() {
                       </p>
                     )}
                 </div>
-                <div className="m-5 max-w-md mx-auto">
+                <div className="py-2">
                   <label
                     className="block mb-2 text-sm font-semibold"
                     htmlFor="intensityofexercise"
@@ -716,11 +716,11 @@ function Dashboard() {
                     <option value="Not sure">Not sure</option>
                   </Field>
                 </div>
-                <div className="py-2 m-5 max-w-md mx-auto">
+                <div className="py-2">
                   <label className="mb-2 text-sm font-semibold block">
                     Did you have breakfast?
                   </label>
-                  <div className="grid grid-cols-3 gap-x-5 max-w-md mx-auto">
+                  <div className="grid grid-cols-3 gap-x-5 ">
                     <div className="relative">
                       <Field
                         className="sr-only peer"
@@ -782,7 +782,7 @@ function Dashboard() {
                     </p>
                   )}
                 </div>
-                <div className="py-2 m-5 max-w-md mx-auto">
+                <div className="py-2">
                   <label
                     className="mb-2 text-sm font-semibold block"
                     htmlFor="breakfastdetails"
@@ -796,7 +796,7 @@ function Dashboard() {
                     id="breakfastdetails"
                   />
                 </div>
-                <div className="max-w-md mx-auto">
+                <div className="pt-8">
                   <button
                     className="px-4 transition ease-in-out delay-150 bg-white p-2 hover:-translate-y-1 hover:scale-110 hover:bg-orange-100 duration-300 mx-auto max-w-md rounded-full border border-orange-500 dark:border-gray-700"
                     type="submit"
