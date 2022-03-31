@@ -46,8 +46,8 @@
         "completed":false,
         "title":"Scrum",
         "breakdown":"Scrum and Trello",
-        "facilitator": "TBC",
-        "coFacilitators": "TBC",
+        "facilitator": "Ms.Nakityo Joanita",
+        "coFacilitators": "Mr.Mbaziira Ronald",
         "date":"TBC",
         "timeFrom":"09:05:00",
         "timeTo":"11:55:00"
@@ -57,7 +57,7 @@
         "title":"Use case Presentation",
         "breakdown":"Scrum and Trello",
         "facilitator": "Mrs.Nakityo Joanita",
-        "coFacilitators": "TBC",
+        "coFacilitators": "Mr.Mbaziira Ronald",
         "date":"TBC",
         "timeFrom":"09:05:00",
         "timeTo":"11:55:00"
@@ -66,8 +66,8 @@
         "completed":false,
         "title":"CLI, Git and Github",
         "breakdown":"How does CLI come in?, How about Git, Hosting on Github, Collaboration",
-        "facilitator": "Mrs.Nakityo Joanita",
-        "coFacilitators": "TBC",
+        "facilitator": "Mr.Anyuru David Derrick",
+        "coFacilitators": "Mr.Kasasira Charles, Mr.Mbaziira Ronald",
         "date":"TBC",
         "timeFrom":"09:05:00",
         "timeTo":"11:55:00"
@@ -76,8 +76,8 @@
         "completed":false,
         "title":"Markdown",
         "breakdown":"What is Markdown, Where do we use it?, Practice",
-        "facilitator": "TBC",
-        "coFacilitators": "TBC",
+        "facilitator": "Mr.Kasasira Charles",
+        "coFacilitators": "Mr.Mbaziira Ronald",
         "date":"TBC",
         "timeFrom":"09:05:00",
         "timeTo":"11:55:00"
