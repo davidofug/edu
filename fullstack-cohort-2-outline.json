@@ -33,34 +33,34 @@
         "timeTo":"11:55:00"
     },
     {
-        "completed":false,
-        "title":"Software Development LifeCyle",
+        "completed":true,
+        "title":"Research process, concept paper , Proposal writing and Software Development LifeCycle",
         "breakdown":"",
         "facilitator": "Ms.Nakityo Joanita",
         "coFacilitators": "Mr.Mutamba Abudi, Mr.Charles Kasasira, Mr. Anyuru David Derrick",
-        "date":"TBC",
-        "timeFrom":"09:05:00",
-        "timeTo":"11:55:00"
+        "date":"21-03-2022 to 24-03-2022",
+        "timeFrom":"09:10:00",
+        "timeTo":"10:50:00"
     },
     {
-        "completed":false,
+        "completed":true,
         "title":"Scrum",
         "breakdown":"Scrum and Trello",
         "facilitator": "Ms.Nakityo Joanita",
         "coFacilitators": "Mr.Mbaziira Ronald",
-        "date":"TBC",
-        "timeFrom":"09:05:00",
-        "timeTo":"11:55:00"
+        "date":"24-03-2022 to 28-03-2022",
+        "timeFrom":"09:10:00",
+        "timeTo":"11:50:00"
     },
     {
-        "completed":false,
-        "title":"Use case Presentation",
+        "completed":true,
+        "title":"Use case Presentation and user stories",
         "breakdown":"Scrum and Trello",
         "facilitator": "Mrs.Nakityo Joanita",
         "coFacilitators": "Mr.Mbaziira Ronald",
-        "date":"TBC",
-        "timeFrom":"09:05:00",
-        "timeTo":"11:55:00"
+        "date":"28-03-2022",
+        "timeFrom":"09:10:00",
+        "timeTo":"11:50:00"
     },
     {
         "completed":false,
