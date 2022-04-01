@@ -34,8 +34,8 @@
     },
     {
         "completed":true,
-        "title":"Research process, concept paper , Proposal writing and Software Development LifeCycle",
-        "breakdown":"",
+        "title":"Product Development Process",
+        "breakdown":"Research Process, Concept paper, Proposal writing, Software Development LifeCycle",
         "facilitator": "Ms.Nakityo Joanita",
         "coFacilitators": "Mr.Mutamba Abudi, Mr.Charles Kasasira, Mr. Anyuru David Derrick",
         "date":"21-03-2022 to 24-03-2022",
@@ -68,7 +68,7 @@
         "breakdown":"How does CLI come in?, How about Git",
         "facilitator": "Mr.Anyuru David Derrick",
         "coFacilitators": "Mr.Kasasira Charles, Mr.Mbaziira Ronald",
-        "date":"TBC",
+        "date":"29-03-2022 - Ongoing",
         "timeFrom":"09:05:00",
         "timeTo":"11:55:00"
     },
