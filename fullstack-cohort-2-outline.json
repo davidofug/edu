@@ -64,8 +64,8 @@
     },
     {
         "completed":false,
-        "title":"CLI, Git and Github",
-        "breakdown":"How does CLI come in?, How about Git, Hosting on Github, Collaboration",
+        "title":"CLI, Git",
+        "breakdown":"How does CLI come in?, How about Git",
         "facilitator": "Mr.Anyuru David Derrick",
         "coFacilitators": "Mr.Kasasira Charles, Mr.Mbaziira Ronald",
         "date":"TBC",
@@ -74,8 +74,8 @@
     },
     {
         "completed":false,
-        "title":"Markdown",
-        "breakdown":"What is Markdown, Where do we use it?, Practice",
+        "title":"Github and Markdown",
+        "breakdown":"Hosting on Github, Collaboration, What is Markdown, Where do we use it?, Practice",
         "facilitator": "Mr.Kasasira Charles",
         "coFacilitators": "Mr.Mbaziira Ronald",
         "date":"TBC",
