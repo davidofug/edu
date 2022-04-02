@@ -3,12 +3,16 @@ import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
 import supabase from "./helpers/supabase";
 import { useAuth } from "./hooks/useAuth";
-
+import { Loader } from "./shared/Loader";
+import Alert from "./shared/Alert";
 function Dashboard() {
+  const [submitting, setSubmitting] = React.useState(false);
+  const [error, setError] = React.useState(false);
+  const [msg, setMsg] = React.useState("");
+  const { user } = useAuth();
   React.useEffect(() => {
     document.title = `${document.title} - Dashboard`;
   }, []);
-
   const checkinSchema = Yup.object().shape({
     backpain: Yup.string().required("Required"),
     chestpain: Yup.string().required("Required"),
@@ -27,14 +31,48 @@ function Dashboard() {
     breakfast: Yup.string().required("Required"),
     breakfastdetails: Yup.string(),
   });
-  const handleSubmit = (values, { setSubmitting }) => {
-    console.log(values);
+  const handleSubmit = async (values, { resetForm }) => {
+    setSubmitting(true);
+    const date = new Date();
+    date.toLocaleString('en-Us',{ timezone: "Africa/Kampala" });
+    values["checkin_at"] = date
+
+    try {
+      const { error } = await supabase
+        .from("check_ins_out")
+        .insert([{ meta: values, user_id: user.id }]);
+
+      if (error) {
+        console.log(error);
+        setSubmitting(false);
+        setError(true)
+        setMsg("Something went wrong!");
+      } else {
+        setSubmitting(false);
+        setError(false)
+        setMsg("Checked In Successfully");
+        // resetForm();
+      }
+    } catch (error) {
+      console.log(error);
+      setSubmitting(false);
+      setError(true)
+      setMsg("Something went wrong");
+    }
   };
+
+  if (submitting) {
+    return (
+      <Loader title="Checking in..." body="Please wait..." />
+    );
+  }
 
   return (
     <section>
       <header>
         <h1>Dashboard</h1>
+        {(error && msg) && <Alert className="bg-red-100 border border-red-700 text-red-700 rounded-md p-2" msg={msg} />}
+        {(!error && msg) && <Alert className="bg-green-100 border border-green-700 text-green-700 rounded-md p-2" msg={msg} />}
       </header>
       <main className="grid gap-4 grid-cols-2 py-10">
         <div className="p-8 rounded-xl bg-white border dark:bg-gray-900 dark:border-gray-800">
@@ -62,7 +100,6 @@ function Dashboard() {
               intensityofexercise: "",
               breakfast: "",
               breakfastdetails: "",
-              checkin: new Date(),
             }}
             validationSchema={checkinSchema}
             onSubmit={handleSubmit}
@@ -813,9 +850,7 @@ function Dashboard() {
             )}
           </Formik>
         </div>
-        <div>
-          {/* <h1>Right</h1> */}
-        </div>
+        <div>{/* <h1>Right</h1> */}</div>
       </main>
     </section>
   );
