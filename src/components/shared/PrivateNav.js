@@ -53,7 +53,7 @@ function PrivateNav() {
               </Link>
             )}
           <PrivateLink
-            className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-orange-400 mr-4"
+            className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-orange-400 mr-4 dark:text-light-gray"
             to="/manage-tasks"
             allowedRoles={[
               "admin",
@@ -69,7 +69,7 @@ function PrivateNav() {
         <div>
           <Link
             to="#"
-            className="px-4 py-1 transition bg-white hover:-translate-y-1 hover:bg-orange-100 duration-300 mx-auto max-w-md rounded-full border border-orange-500 dark:border-gray-700"
+            className="px-4 py-1 transition bg-white hover:-translate-y-1 hover:bg-orange-100 duration-300 mx-auto max-w-md rounded-full border border-orange-500 dark:border-gray-700 dark:text-white dark:hover:border-gray-700 dark:hover:text-gray-900 dark:hover:bg-gray-100 dark:hover:bg-orange-500"
             onClick={() => {
               signOut(setUser);
               navigate("/", { replace: true });
