@@ -63,12 +63,12 @@
         "timeTo":"11:50:00"
     },
     {
-        "completed":false,
-        "title":"CLI, Git",
+        "completed":true,
+        "title":"CLI, Shell, Git, Cron",
         "breakdown":"How does CLI come in?, How about Git",
         "facilitator": "Mr.Anyuru David Derrick",
         "coFacilitators": "Mr.Kasasira Charles, Mr.Mbaziira Ronald",
-        "date":"29-03-2022 - Ongoing",
+        "date":"29-03-2022 - 13-04-2022",
         "timeFrom":"09:05:00",
         "timeTo":"11:55:00"
     },
