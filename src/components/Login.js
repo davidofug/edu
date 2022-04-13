@@ -30,7 +30,7 @@ function Login() {
     <Navigate to={from} replace />
   ) : (
     <div className="flex flex-col justify-center items-center h-screen">
-      <div className="bg-white border rounded-lg px-8 pt-6 pb-8 mb-4">
+      <div className="bg-white border rounded-lg px-8 pt-6 pb-8 mb-4 dark:bg-gray-900 dark:border-gray-800">
         <h1 className="text-center font-semibold text-2xl mb-4">Login</h1>
         {errorMsg && <p className="text-red-500">{errorMsg}</p>}
         <Formik
@@ -50,13 +50,13 @@ function Login() {
             <Form>
               <div className="mb-4">
                 <label
-                  className="block text-gray-700 text-sm font-bold mb-2"
+                  className="block text-gray-700 dark:text-gray-400 text-sm font-bold mb-2"
                   htmlFor="email"
                 >
                   E-mail
                 </label>
                 <Field
-                  className="p-2 appearance-none leading-tight focus:border-orange-400 focus:bg-white focus:outline-none focus:shadow-outline outline-0 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 w-full rounded-lg"
+                  className="p-2 appearance-none leading-tight outline-0 bg-gray-100 border border-gray-300 w-full rounded-lg focus:border-orange-400 focus:bg-white focus:outline-none focus:shadow-outline dark:bg-gray-800 dark:border-gray-700 dark:focus:bg-gray-600 dark:focus:border-gray-500"
                   id="email"
                   name="email"
                   type="text"
@@ -68,13 +68,13 @@ function Login() {
               </div>
               <div className="mb-6">
                 <label
-                  className="block text-gray-700 text-sm font-bold mb-2"
+                  className="block text-gray-700 dark:text-gray-400 text-sm font-bold mb-2"
                   htmlFor="password"
                 >
                   Password
                 </label>
                 <Field
-                  className="p-2 appearance-none leading-tight focus:border-orange-400 focus:bg-white focus:outline-none focus:shadow-outline outline-0 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 w-full rounded-lg"
+                  className="p-2 appearance-none leading-tight outline-0 bg-gray-100 border border-gray-300 w-full rounded-lg focus:border-orange-400 focus:bg-white focus:outline-none focus:shadow-outline dark:bg-gray-800 dark:border-gray-700 dark:focus:bg-gray-600 dark:focus:border-gray-500"
                   id="password"
                   name="password"
                   type="password"
@@ -88,7 +88,7 @@ function Login() {
               </div>
               <div className="flex items-center justify-between">
                 <button
-                  className="px-4 py-1 transition bg-white hover:-translate-y-1 hover:bg-orange-100 duration-300 mx-auto max-w-md rounded-full border border-orange-500 dark:border-gray-700"
+                  className="px-4 py-1 transition bg-white hover:-translate-y-1 hover:bg-orange-100 duration-300 mx-auto max-w-md rounded-full border border-orange-500 dark:border-gray-700 dark:text-gray-500"
                   type="submit"
                 >
                   Sign In
