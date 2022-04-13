@@ -21,7 +21,7 @@ function PublicNav() {
         </button>
       </div>
       <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-        <div className="text-sm lg:flex-grow">
+        <div className="text-sm dark:text-light-gray lg:flex-grow">
           <Link
             to="/"
             className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-orange-400 mr-4"
@@ -38,7 +38,7 @@ function PublicNav() {
         <div>
           <Link
             to="/login"
-            className="px-4 py-1 transition bg-white hover:-translate-y-1 hover:bg-orange-100 duration-300 mx-auto max-w-md rounded-full border border-orange-500 dark:border-gray-700"
+            className="px-4 py-1 transition bg-white dark:bg-black dark:border-white dark:text-light-gray hover:-translate-y-1 hover:bg-orange-100 duration-300 mx-auto max-w-md rounded-full border border-orange-500 dark:border-gray-700"
             >
             Login
           </Link>
