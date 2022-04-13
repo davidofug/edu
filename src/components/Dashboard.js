@@ -120,7 +120,7 @@ function Dashboard() {
                         id="backpain_yes"
                       />
                       <label
-                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent dark:hover:bg-gray-600 dark:hover:border-gray-500"
                         htmlFor="backpain_yes"
                       >
                         Yes
@@ -138,7 +138,7 @@ function Dashboard() {
                         id="backpain_no"
                       />
                       <label
-                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-red-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent dark:hover:bg-gray-600 dark:hover:border-gray-500"
                         htmlFor="backpain_no"
                       >
                         No
@@ -156,7 +156,7 @@ function Dashboard() {
                         id="backpain_notsure"
                       />
                       <label
-                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-yellow-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent dark:hover:bg-gray-600 dark:hover:border-gray-500"
                         htmlFor="backpain_notsure"
                       >
                         Not sure
@@ -186,7 +186,7 @@ function Dashboard() {
                         id="chestpain_yes"
                       />
                       <label
-                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent dark:hover:bg-gray-600 dark:hover:border-gray-500"
                         htmlFor="chestpain_yes"
                       >
                         Yes
@@ -204,7 +204,7 @@ function Dashboard() {
                         id="chestpain_no"
                       />
                       <label
-                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-red-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent dark:hover:bg-gray-600 dark:hover:border-gray-500"
                         htmlFor="chestpain_no"
                       >
                         No
@@ -222,7 +222,7 @@ function Dashboard() {
                         id="chestpain_notsure"
                       />
                       <label
-                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-yellow-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent dark:hover:bg-gray-600 dark:hover:border-gray-500"
                         htmlFor="chestpain_notsure"
                       >
                         Not sure
@@ -252,7 +252,7 @@ function Dashboard() {
                         id="cough_yes"
                       />
                       <label
-                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700  border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent dark:hover:bg-gray-600 dark:hover:border-gray-500"
                         htmlFor="cough_yes"
                       >
                         Yes
@@ -270,7 +270,7 @@ function Dashboard() {
                         id="cough_no"
                       />
                       <label
-                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-red-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent dark:hover:bg-gray-600 dark:hover:border-gray-500"
                         htmlFor="cough_no"
                       >
                         No
@@ -288,7 +288,7 @@ function Dashboard() {
                         id="cough_notsure"
                       />
                       <label
-                        className="flex p-2 bg-gray-100 border dark:bg-gray-800 dark:border-gray-700 border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-yellow-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent dark:hover:bg-gray-600 dark:hover:border-gray-500"
                         htmlFor="cough_notsure"
                       >
                         Not sure
@@ -318,7 +318,7 @@ function Dashboard() {
                         id="fever_yes"
                       />
                       <label
-                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent dark:hover:bg-gray-600 dark:hover:border-gray-500"
                         htmlFor="fever_yes"
                       >
                         Yes
@@ -336,7 +336,7 @@ function Dashboard() {
                         id="fever_no"
                       />
                       <label
-                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700  border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-red-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent dark:hover:bg-gray-600 dark:hover:border-gray-500"
                         htmlFor="fever_no"
                       >
                         No
@@ -354,7 +354,7 @@ function Dashboard() {
                         id="fever_notsure"
                       />
                       <label
-                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-yellow-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent dark:hover:bg-gray-600 dark:hover:border-gray-500"
                         htmlFor="fever_notsure"
                       >
                         Not sure
@@ -384,7 +384,7 @@ function Dashboard() {
                         id="headache_yes"
                       />
                       <label
-                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent dark:hover:bg-gray-600 dark:hover:border-gray-500"
                         htmlFor="headache_yes"
                       >
                         Yes
@@ -402,7 +402,7 @@ function Dashboard() {
                         id="headache_no"
                       />
                       <label
-                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-red-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent dark:hover:bg-gray-600 dark:hover:border-gray-500"
                         htmlFor="headache_no"
                       >
                         No
@@ -420,7 +420,7 @@ function Dashboard() {
                         id="headache_notsure"
                       />
                       <label
-                        className="flex p-2 bg-gray-100 border dark:bg-gray-800 dark:border-gray-700 border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-yellow-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent dark:hover:bg-gray-600 dark:hover:border-gray-500"
                         htmlFor="headache_notsure"
                       >
                         Not sure
@@ -450,7 +450,7 @@ function Dashboard() {
                         id="sorethroat_yes"
                       />
                       <label
-                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent dark:hover:bg-gray-600 dark:hover:border-gray-500"
                         htmlFor="sorethroat_yes"
                       >
                         Yes
@@ -468,7 +468,7 @@ function Dashboard() {
                         id="sorethroat_no"
                       />
                       <label
-                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-red-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent dark:hover:bg-gray-600 dark:hover:border-gray-500"
                         htmlFor="sorethroat_no"
                       >
                         No
@@ -486,7 +486,7 @@ function Dashboard() {
                         id="sorethroat_notsure"
                       />
                       <label
-                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-yellow-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent dark:hover:bg-gray-600 dark:hover:border-gray-500"
                         htmlFor="sorethroat_notsure"
                       >
                         Not sure
@@ -516,7 +516,7 @@ function Dashboard() {
                         id="shortnessofbreath_yes"
                       />
                       <label
-                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent dark:hover:bg-gray-600 dark:hover:border-gray-500"
                         htmlFor="shortnessofbreath_yes"
                       >
                         Yes
@@ -534,7 +534,7 @@ function Dashboard() {
                         id="shortnessofbreath_no"
                       />
                       <label
-                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border dark:bg-gray-800 dark:border-gray-700 border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-red-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent dark:hover:bg-gray-600 dark:hover:border-gray-500"
                         htmlFor="shortnessofbreath_no"
                       >
                         No
@@ -552,7 +552,7 @@ function Dashboard() {
                         id="shortnessofbreath_notsure"
                       />
                       <label
-                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-yellow-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent dark:hover:bg-gray-600 dark:hover:border-gray-500"
                         htmlFor="shortnessofbreath_notsure"
                       >
                         Not sure
@@ -582,7 +582,7 @@ function Dashboard() {
                         id="sneezing_yes"
                       />
                       <label
-                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent dark:hover:bg-gray-600 dark:hover:border-gray-500"
                         htmlFor="sneezing_yes"
                       >
                         Yes
@@ -600,7 +600,7 @@ function Dashboard() {
                         id="sneezing_no"
                       />
                       <label
-                        className="flex p-2 bg-gray-100 border dark:bg-gray-800 dark:border-gray-700 border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-red-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent dark:hover:bg-gray-600 dark:hover:border-gray-500"
                         htmlFor="sneezing_no"
                       >
                         No
@@ -618,7 +618,7 @@ function Dashboard() {
                         id="sneezing_notsure"
                       />
                       <label
-                        className="flex p-2 bg-gray-100 border dark:bg-gray-800 dark:border-gray-700 border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-yellow-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent dark:hover:bg-gray-600 dark:hover:border-gray-500"
                         htmlFor="sneezing_notsure"
                       >
                         Not sure
@@ -648,7 +648,7 @@ function Dashboard() {
                         id="tiredness_yes"
                       />
                       <label
-                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent dark:hover:bg-gray-600 dark:hover:border-gray-500"
                         htmlFor="tiredness_yes"
                       >
                         Yes
@@ -666,7 +666,7 @@ function Dashboard() {
                         id="tiredness_no"
                       />
                       <label
-                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-red-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent dark:hover:bg-gray-600 dark:hover:border-gray-500"
                         htmlFor="tiredness_no"
                       >
                         No
@@ -684,7 +684,7 @@ function Dashboard() {
                         id="tiredness_notsure"
                       />
                       <label
-                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-yellow-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent dark:hover:bg-gray-600 dark:hover:border-gray-500"
                         htmlFor="tiredness_notsure"
                       >
                         Not sure
@@ -772,7 +772,7 @@ function Dashboard() {
                         id="breakfast_yes"
                       />
                       <label
-                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent dark:hover:bg-gray-600 dark:hover:border-gray-500"
                         htmlFor="breakfast_yes"
                       >
                         Yes
@@ -790,7 +790,7 @@ function Dashboard() {
                         id="breakfast_no"
                       />
                       <label
-                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-red-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent dark:hover:bg-gray-600 dark:hover:border-gray-500"
                         htmlFor="breakfast_no"
                       >
                         No
@@ -808,7 +808,7 @@ function Dashboard() {
                         id="breakfast_maybe"
                       />
                       <label
-                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-yellow-500 peer-checked:ring-1 peer-checked:border-transparent"
+                        className="flex p-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-green-500 peer-checked:ring-1 peer-checked:border-transparent dark:hover:bg-gray-600 dark:hover:border-gray-500"
                         htmlFor="breakfast_maybe"
                       >
                         Maybe
@@ -840,8 +840,8 @@ function Dashboard() {
                 </div>
                 <div className="pt-8">
                   <button
-                    className="px-4 py-1 transition bg-white hover:-translate-y-1 hover:bg-orange-100 duration-300 mx-auto max-w-md rounded-full border border-orange-500 dark:border-gray-700"
-                    type="submit"
+                  className="px-4 py-1 transition bg-white hover:-translate-y-1 hover:bg-orange-100 duration-300 mx-auto max-w-md rounded-full border border-orange-500 dark:border-gray-700 dark:text-gray-500"
+                  type="submit"
                   >
                     Check in
                   </button>

@@ -13,9 +13,7 @@ function PrivateNav() {
     <nav className="flex items-center justify-between flex-wrap p-6">
       <div className="flex items-center flex-shrink-0 text-white mr-6">
         <img src={logo} width="22" height="22" alt="Ablestate-logo" />
-        <span className="font-semibold text-sm tracking-tight text-black">
-          Ablestate
-        </span>
+        <span className="font-semibold text-sm tracking-tight text-black dark:text-gray-100">Ablestate</span>
       </div>
       <div className="block lg:hidden">
         <button className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
@@ -33,13 +31,13 @@ function PrivateNav() {
         <div className="text-sm lg:flex-grow">
           <Link
             to="/dashboard"
-            className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-orange-400 mr-4"
+            className="block mt-4 dark:text-gray-100 lg:inline-block lg:mt-0 text-black hover:text-orange-400 mr-4"
           >
             Dashboard
           </Link>
           <Link
             to="/second-cohort-fullstack-outline"
-            className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-orange-400 mr-4"
+            className="block mt-4 dark:text-gray-100 lg:inline-block lg:mt-0 text-black hover:text-orange-400 mr-4"
           >
             Season 2 Outline
           </Link>
@@ -47,13 +45,13 @@ function PrivateNav() {
             user.user_metadata?.roles.includes("admin") && (
               <Link
                 to="/members"
-                className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-orange-400 mr-4"
-              >
+                className="block mt-4 dark:text-gray-100 lg:inline-block lg:mt-0 text-black hover:text-orange-400 mr-4"
+                >
                 Members
               </Link>
             )}
           <PrivateLink
-            className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-orange-400 mr-4 dark:text-light-gray"
+            className="block mt-4 dark:text-gray-100 lg:inline-block lg:mt-0 text-black hover:text-orange-400 mr-4"
             to="/manage-tasks"
             allowedRoles={[
               "admin",
@@ -69,7 +67,7 @@ function PrivateNav() {
         <div>
           <Link
             to="#"
-            className="px-4 py-1 transition bg-white hover:-translate-y-1 hover:bg-orange-100 duration-300 mx-auto max-w-md rounded-full border border-orange-500 dark:border-gray-700 dark:text-white dark:hover:border-gray-700 dark:hover:text-gray-900 dark:hover:bg-gray-100 dark:hover:bg-orange-500"
+            className="px-4 py-1 transition bg-white dark:bg-black dark:border-white dark:text-light-gray hover:-translate-y-1 hover:bg-orange-100 duration-300 mx-auto max-w-md rounded-full border border-orange-500 dark:hover:text-orange-400 dark:hover:bg-black dark:hover:border-orange-400"
             onClick={() => {
               signOut(setUser);
               navigate("/", { replace: true });
