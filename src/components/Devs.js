@@ -22,7 +22,7 @@ const Devs = () => {
     return (<div className="py-5">
   {devs.map( (dev, index) => (
     <div key={index.toString()} className="border border-gray rounded-lg bg-white py-4 px-5 mb-2">
-      <h1 className="mb-2">{dev.name} {dev.gender === "Female" ? <span title={dev.gender}>👩🏾‍💻</span> : <span title={dev.gender}>👨🏽‍💻</span>} {dev.almunus && <span className="ml-3 text-gray-700 lowercase text-xs rounded-full bg-cyan-100 py-1 px-3">Alumnus 👍🏽</span>}</h1>
+      <h1 className="mb-2">{dev.name} {dev.gender === "Female" ? <span title={dev.gender}>👩🏾‍💻</span> : <span title={dev.gender}>👨🏽‍💻</span>} {dev.alumnus === 'yes' && <span className="ml-3 text-gray-700 lowercase text-xs rounded-full bg-cyan-100 py-1 px-3">Almunus 👍🏽</span>}</h1>
       <p className="text-sm"><span className="text-gray-500 uppercase">Stack(s):</span> {dev.stacks}</p>
       <p className="text-sm mb-3"><span className="text-gray-500 uppercase">Tech skill(s):</span> {dev.techskills}</p>
       <a href={`${dev.cv}`} target="_blank" className="text-xs py-1 px-4 bg-cyan-500 rounded-full mr-2 hover:bg-black hover:text-white transition">CV</a>
