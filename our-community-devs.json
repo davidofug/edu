@@ -33,8 +33,8 @@
     "cv": "https://cutt.ly/WGU174V",
     "portifolio": "https://anyuru.github.io/",
     "stacks": "MERN",
-    "techskills":"Mongo DB, Express, ReactJS, NodeJS, JavaScript, Python, Figma",
-    "almuni": "yes"
+    "techskills":"Mongo DB, Express, ReactJS, NodeJS, JavaScript, Python, Figma, React Native, Serveless functions",
+    "alumnus": "yes"
   },
   {
     "name": "Mujjuni Brian",
@@ -43,7 +43,7 @@
     "portifolio":"https://drive.google.com/file/d/1ahBRoCBXIB3ZtdAwLcpNRBfqYeT3o0wg/view?usp=sharing",
     "stacks": "Django, Laravel, MERN",
     "techskills":"Python, Django, Laravel, Mongo DB ,Flutter, Postgresql, MSSQL, Firebase, Express, Node js, React js, Bootstrap, CSS, Nginx, Tailwind",
-    "almuni": "yes"
+    "alumnus": "No"
   },
   {
     "name": "Bukenya Kizza Roland",
@@ -52,7 +52,7 @@
     "portifolio": "https://matching.turing.com/developer-resume/ec500686cb1e6b9299dc08f368c573c04c93fac4e2df79",
     "stacks": "MERN,",
     "techskills":" Figma, JavaScript, ReactJS, NodeJS, Express, MongoDB , React Native , Typescript , Next js , Graghql , Tailwind CSS , Styled components",
-    "almuni": "No"
+    "alumnus": "No"
   },
   {
     "name": "Bukirwa Halimah",
@@ -64,9 +64,16 @@
   {
     "name": "Okello Elijah",
     "gender": "Male",
-    "stacks": "MERN",
+    "stacks": "MERN, Django",
     "cv": "https://cutt.ly/ZGIONcd",
     "techskills":"Python, JavaScript, React, Django, Mongo DB, Express, NodeJS, Firebase, MySQL, Postgresql",
+    "alumnus": "No"
+  },
+  {
+    "name": "Kalenda Racheal",
+    "gender": "Female",
+    "cv": "https://cutt.ly/bGI5kSg",
+    "techskills":"React,JavaScript, NextJS, C, C#, Figma ",
     "alumnus": "No"
   }
 ]}
