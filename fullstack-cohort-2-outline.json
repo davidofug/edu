@@ -5,10 +5,230 @@
       {
         "completed":false,
         "title":"Applicant Review",
-        "breakdown":"Install Browsers(Chrome and Firefox), Install zoom, TouchTyping modules(620 + 649 send screenshots to edu@theablestate.com)",
+        "breakdown":"Install Browsers(Chrome & Firefox), Install & Setup zoom app on your computer, Do TouchTyping modules(620 + 649 send screenshots to edu@theablestate.com), Share the Specifications of your Computer, Complete the Questionaire",
         "facilitator": "Coach Wampamba David",
         "coFacilitators": "Mr.Mbazira Ronald",
-        "date":"07-03-2022",
+        "date":"09-03-2022",
+        "timeFrom":"09:05:00",
+        "timeTo":"11:55:00"
+    },
+    {
+        "completed":false,
+        "title":"Tech Prep session",
+        "breakdown":"Zoom code of conduct, Platforms to which to Open Accounts, Apps to Install",
+        "facilitator": "Coach Wampamba David",
+        "coFacilitators": "Mr.Mbazira Ronald, Mr.David Derrick Anyuru, Mr.Charles Kasasira",
+        "date":"10-03-2022",
+        "timeFrom":"09:05:00",
+        "timeTo":"11:55:00"
+    },
+    {
+        "completed":false,
+        "title":"Purpose Driven Networking",
+        "breakdown":"Personal Statement, Professional Profile development, Making a strong Online Footprint",
+        "facilitator": "Mr.Mutamba Abudi",
+        "coFacilitators": "Coach Wampamba David, Mr.Mbazira Ronald",
+        "date":"14-03-22",
+        "timeFrom":"09:05:00",
+        "timeTo":"11:55:00"
+    },
+    {
+        "completed":true,
+        "title":"Product Development Process",
+        "breakdown":"Research Process, Concept paper, Proposal writing, Software Development LifeCycle",
+        "facilitator": "Ms.Nakityo Joanita",
+        "coFacilitators": "Mr.Mutamba Abudi, Mr.Charles Kasasira, Mr. Anyuru David Derrick",
+        "date":"21-03-2022 to 24-03-2022",
+        "timeFrom":"09:10:00",
+        "timeTo":"10:50:00"
+    },
+    {
+        "completed":true,
+        "title":"Scrum",
+        "breakdown":"Scrum and Trello",
+        "facilitator": "Ms.Nakityo Joanita",
+        "coFacilitators": "Mr.Mbaziira Ronald",
+        "date":"24-03-2022 to 28-03-2022",
+        "timeFrom":"09:10:00",
+        "timeTo":"11:50:00"
+    },
+    {
+        "completed":true,
+        "title":"Use case Presentation and user stories",
+        "breakdown":"Scrum and Trello",
+        "facilitator": "Mrs.Nakityo Joanita",
+        "coFacilitators": "Mr.Mbaziira Ronald",
+        "date":"28-03-2022",
+        "timeFrom":"09:10:00",
+        "timeTo":"11:50:00"
+    },
+    {
+        "completed":true,
+        "title":"CLI, Shell, Git, Cron",
+        "breakdown":"How does CLI come in?, How about Git",
+        "facilitator": "Mr.Anyuru David Derrick",
+        "coFacilitators": "Mr.Kasasira Charles, Mr.Mbaziira Ronald",
+        "date":"29-03-2022 - 13-04-2022",
+        "timeFrom":"09:05:00",
+        "timeTo":"11:55:00"
+    },
+    {
+        "completed":false,
+        "title":"Github and Markdown",
+        "breakdown":"Hosting on Github, Collaboration, What is Markdown, Where do we use it?, Practice",
+        "facilitator": "Mr.Kasasira Charles",
+        "coFacilitators": "Mr.Mbaziira Ronald",
+        "date":"14-04-2022",
+        "timeFrom":"09:05:00",
+        "timeTo":"11:55:00"
+    },
+    {
+        "completed":false,
+        "title":"User Experience and User Interface",
+        "breakdown":"Wireframes, Mockups, Figma",
+        "facilitator": "Mr.Charles Kasasira",
+        "coFacilitators": "Mr.Mutamba Abudi, Ms.Nakityo Joanita",
+        "date":"TBC",
+        "timeFrom":"09:05:00",
+        "timeTo":"11:55:00"
+    },
+    {
+        "completed":false,
+        "title":"HTML",
+        "breakdown":"What it is?, Why bother?, How to use it?, When to use it?",
+        "facilitator": "Guest Facilitator",
+        "coFacilitators": "TBC",
+        "date":"TBC",
+        "timeFrom":"09:05:00",
+        "timeTo":"11:55:00"
+    },
+    {
+        "completed":false,
+        "title":"CSS",
+        "breakdown":"What it is?, Why bother?, How to use it?, When to use it?",
+        "facilitator": "Mr. Mutamba Abudi",
+        "coFacilitators": "TBC",
+        "date":"TBC",
+        "timeFrom":"09:05:00",
+        "timeTo":"11:55:00"
+    },
+    {
+        "completed":false,
+        "title":"Bootstrap",
+        "breakdown":"What it is?, Why bother?, How to use it?, When to use it?",
+        "facilitator": "TBC",
+        "coFacilitators": "TBC",
+        "date":"TBC",
+        "timeFrom":"09:05:00",
+        "timeTo":"11:55:00"
+    },
+    {
+        "completed":false,
+        "title":"Structured Query Language",
+        "breakdown":"What it is?, Why bother?, How to use it?, When to use it?",
+        "facilitator": "TBC",
+        "coFacilitators": "TBC",
+        "date":"TBC",
+        "timeFrom":"09:05:00",
+        "timeTo":"11:55:00"
+    },
+    {
+        "completed":false,
+        "title":"Modern JavaScript",
+        "breakdown":"What it is?, Why bother?, How to use it?, When to use it?, Introduction to TDD and BDD, Benefits, TDD Practice",
+        "facilitator": "Mr.Charles Kasasira",
+        "coFacilitators": "Coach Wampamba David, Mr. David Derrick Anyuru",
+        "date":"TBC",
+        "timeFrom":"09:05:00",
+        "timeTo":"11:55:00"
+    },
+    {
+        "completed":false,
+        "title":"JavaScript in the Backend",
+        "breakdown":"What it NodeJS?, Why bother?, How to use it?, When to use it?, TDD continued",
+        "facilitator": "Coach Wampamba David",
+        "coFacilitators": "Coach Wampamba David",
+        "date":"TBC",
+        "timeFrom":"09:05:00",
+        "timeTo":"11:55:00"
+    },
+    {
+        "completed":false,
+        "title":"FrontEnd Made Easy",
+        "breakdown":"An Introduction to React.JS, What it ReactJS?, Why bother?, How to use it?, When to use it?",
+        "facilitator": "Ms.Nakityo Joanita",
+        "coFacilitators": "Coach Wampamba David",
+        "date":"TBC",
+        "timeFrom":"09:05:00",
+        "timeTo":"11:55:00"
+    },
+    {
+        "completed":false,
+        "title":"Storage Systems",
+        "breakdown":"Introduction to Document Based Databases, Why bother?, How to use them?, JSON continued, Introduction to MongoDB",
+        "facilitator": "TBC",
+        "coFacilitators": "TBC",
+        "date":"TBC",
+        "timeFrom":"09:05:00",
+        "timeTo":"11:55:00"
+    },
+    {
+        "completed":false,
+        "title":"APIs and Express",
+        "breakdown":"REST APIs",
+        "facilitator": "TBC",
+        "coFacilitators": "TBC",
+        "date":"TBC",
+        "timeFrom":"09:05:00",
+        "timeTo":"11:55:00"
+    },
+    {
+        "completed":false,
+        "title":"Deployment on Cloud",
+        "breakdown":"",
+        "facilitator": "TBC",
+        "coFacilitators": "TBC",
+        "date":"TBC",
+        "timeFrom":"09:05:00",
+        "timeTo":"11:55:00"
+    },
+    {
+        "completed":false,
+        "title":"Final Project submission",
+        "breakdown":"",
+        "facilitator": "TBC",
+        "coFacilitators": "TBC",
+        "date":"TBC",
+        "timeFrom":"09:05:00",
+        "timeTo":"11:55:00"
+    },
+    {
+        "completed":false,
+        "title":"Graduation day",
+        "breakdown":"",
+        "facilitator": "Ms.Stella Nakku",
+        "coFacilitators": "Training Team",
+        "date":"Saturday,1st October, 2022",
+        "timeFrom":"11:05:00",
+        "timeTo":"17:55:00"
+    },
+    {
+        "completed":false,
+        "title":"Internship (Optional)",
+        "breakdown":"",
+        "facilitator": "TBC",
+        "coFacilitators": "TBC",
+        "date":"TBC",
+        "timeFrom":"09:05:00",
+        "timeTo":"11:55:00"
+    },
+    {
+        "completed":false,
+        "title":"Apprenticeship (Optional)",
+        "breakdown":"ReactNative, Firebase and Supabase, Slack, Clickup",
+        "facilitator": "TBC",
+        "coFacilitators": "TBC",
+        "date":"TBC",
         "timeFrom":"09:05:00",
         "timeTo":"11:55:00"
     }
