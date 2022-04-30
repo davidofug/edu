@@ -35,6 +35,15 @@
     "stacks": "MERN",
     "techskills":"Mongo DB, Express, ReactJS, NodeJS, JavaScript, Python, Figma",
     "almuni": "yes"
-  }
+  },
+    {
+    "name": "Mujjuni Brian",
+    "gender": "Male",
+    "cv": "https://drive.google.com/file/d/1ahBRoCBXIB3ZtdAwLcpNRBfqYeT3o0wg/view?usp=sharing",
+    "portifolio":"",
+    "stacks": "MERN,Django,Laravel",
+    "techskills":"Python,Django,Laravel,Php,Gnix,Ajax,Jquery,Flutter,ASP,.NET,c#,c++,Mongo DB,Postgresql,MSSQL,Firebase,Express,Node,Azure,Linux Servers,Electron Js,Socket.Io,Tkinter",
+    "almuni": "yes"
+  },
   
 ]}
