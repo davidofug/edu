@@ -1,16 +1,14 @@
 {
-"developers": [
+  "devs": [
   {
     "name": "Abudi Mutamba",
     "gender": "Male",
     "cv": "https://cutt.ly/LGUJStg",
     "portifolio": "https://cutt.ly/HGUIZoZ",
-    "stacks": "MERN,",
+    "stacks": "MERN",
     "techskills":"WordPress, Figma, JavaScript, ReactJS, NodeJS, Express, MongoDB",
-    "almuni": "yes"
+    "alumnus": "yes"
   },
-  
-   
   {
    "name": "Charles Kasasira",
    "cv": "https://cutt.ly/CGUBEgQ",
@@ -18,7 +16,7 @@
     "portfolio": "https://kasasira.pages.dev",
    "stacks": "MERN",
     "techskills":"JavaScript, ReactJs, NodeJs, Express, MongoDB, Figma",
-    "almuni":"yes"
+    "alumnus":"yes"
   },
   {
     "name": "Joanita Nakityo",
@@ -27,7 +25,7 @@
     "portifolio": "https://cutt.ly/kGU9U4U",
     "stacks": "MERN",
     "techskills":"Figma, JavaScript, ReactJS, NodeJS, Express, MongoDB, Python, C ",
-    "almuni": "yes"
+    "alumnus": "yes"
   },
   {
     "name": "David Derrick Anyuru",
@@ -45,7 +43,21 @@
     "portifolio": "https://matching.turing.com/developer-resume/ec500686cb1e6b9299dc08f368c573c04c93fac4e2df79",
     "stacks": "MERN,",
     "techskills":" Figma, JavaScript, ReactJS, NodeJS, Express, MongoDB , React Native , Typescript , Next js , Graghql , Tailwind CSS , Styled components",
-    "almuni": "yes"
+    "almuni": "No"
   },
-  
+  {
+    "name": "Bukirwa Halimah",
+    "gender": "Female",
+    "cv": "https://cutt.ly/qGI2Ik1",
+    "techskills":"Python, C, GCP, Azure, SQL",
+    "alumnus": "No"
+  },
+  {
+    "name": "Okello Elijah",
+    "gender": "Male",
+    "stacks": "MERN",
+    "cv": "https://cutt.ly/ZGIONcd",
+    "techskills":"Python, JavaScript, React, Django, Mongo DB, Express, NodeJS, Firebase, MySQL, Postgresql",
+    "alumnus": "No"
+  }
 ]}
