@@ -34,16 +34,16 @@
     "portifolio": "https://anyuru.github.io/",
     "stacks": "MERN",
     "techskills":"Mongo DB, Express, ReactJS, NodeJS, JavaScript, Python, Figma, React Native, Serveless functions",
-    "almuni": "yes"
+    "alumnus": "yes"
   },
   {
     "name": "Mujjuni Brian",
     "gender": "Male",
     "cv": "https://drive.google.com/file/d/1ahBRoCBXIB3ZtdAwLcpNRBfqYeT3o0wg/view?usp=sharing",
-    "portifolio":"",
-    "stacks": "MERN,Django,Laravel",
-    "techskills":"Python,Django,Laravel,Php,Gnix,Ajax,Jquery,Flutter,ASP,.NET,c#,c++,Mongo DB,Postgresql,MSSQL,Firebase,Express,Node,Azure,Linux Servers,Electron Js,Socket.Io,Tkinter,Wordpress",
-    "almuni": "yes"
+    "portifolio":"https://drive.google.com/file/d/1ahBRoCBXIB3ZtdAwLcpNRBfqYeT3o0wg/view?usp=sharing",
+    "stacks": "Django, Laravel, MERN",
+    "techskills":"Python, Django, Laravel, Mongo DB ,Flutter, Postgresql, MSSQL, Firebase, Express, Node js, React js, Bootstrap, CSS, Nginx, Tailwind",
+    "alumnus": "No"
   },
   {
     "name": "Bukenya Kizza Roland",
@@ -52,7 +52,7 @@
     "portifolio": "https://matching.turing.com/developer-resume/ec500686cb1e6b9299dc08f368c573c04c93fac4e2df79",
     "stacks": "MERN,",
     "techskills":" Figma, JavaScript, ReactJS, NodeJS, Express, MongoDB , React Native , Typescript , Next js , Graghql , Tailwind CSS , Styled components",
-    "almuni": "No"
+    "alumnus": "No"
   },
   {
     "name": "Bukirwa Halimah",
