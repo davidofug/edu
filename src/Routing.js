@@ -11,6 +11,7 @@ import SignOut from "./components/SignOut";
 import UnAuthorized from "./components/UnAuthorized";
 import Missing from "./components/Missing";
 import ManageTasks from "./components/ManageTasks";
+import Devs from "./components/Devs";
 
 function Routing() {
   return (
@@ -23,6 +24,10 @@ function Routing() {
           <Route
             path="/second-cohort-fullstack-outline"
             element={<Outline id="fullstack-cohort-2" />}
+          />
+          <Route
+            path="/devcommunity"
+            element={<Devs />}
           />
           <Route path="/unathorized" element={<UnAuthorized />} />
           <Route element={<PrivateRoute allowedRoles={["student","admin"]} />}>
