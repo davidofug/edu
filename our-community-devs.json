@@ -7,7 +7,7 @@
     "portifolio": "https://cutt.ly/HGUIZoZ",
     "stacks": "MERN",
     "techskills":"WordPress, Figma, JavaScript, ReactJS, NodeJS, Express, MongoDB",
-    "almuni": "yes"
+    "alumnus": "yes"
   },
   {
    "name": "Charles Kasasira",
@@ -16,7 +16,7 @@
     "portfolio": "https://kasasira.pages.dev",
    "stacks": "MERN",
     "techskills":"JavaScript, ReactJs, NodeJs, Express, MongoDB, Figma",
-    "almuni":"yes"
+    "alumnus":"yes"
   },
   {
     "name": "Joanita Nakityo",
@@ -25,7 +25,7 @@
     "portifolio": "https://cutt.ly/kGU9U4U",
     "stacks": "MERN",
     "techskills":"Figma, JavaScript, ReactJS, NodeJS, Express, MongoDB, Python, C ",
-    "almuni": "yes"
+    "alumnus": "yes"
   },
   {
     "name": "David Derrick Anyuru",
@@ -34,7 +34,7 @@
     "portifolio": "https://anyuru.github.io/",
     "stacks": "MERN",
     "techskills":"Mongo DB, Express, ReactJS, NodeJS, JavaScript, Python, Figma",
-    "almuni": "yes"
+    "alumnus": "yes"
   }
   
 ]}
