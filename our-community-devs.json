@@ -9,6 +9,8 @@
     "techskills":"WordPress, Figma, JavaScript, ReactJS, NodeJS, Express, MongoDB",
     "almuni": "yes"
   },
+  
+   
   {
    "name": "Charles Kasasira",
    "cv": "https://cutt.ly/CGUBEgQ",
@@ -35,6 +37,15 @@
     "stacks": "MERN",
     "techskills":"Mongo DB, Express, ReactJS, NodeJS, JavaScript, Python, Figma",
     "almuni": "yes"
-  }
+  },
+  {
+    "name": "Bukenya Kizza Roland",
+    "gender": "Male",
+    "cv": "https://matching.turing.com/developer-resume/ec500686cb1e6b9299dc08f368c573c04c93fac4e2df79",
+    "portifolio": "https://matching.turing.com/developer-resume/ec500686cb1e6b9299dc08f368c573c04c93fac4e2df79",
+    "stacks": "MERN,",
+    "techskills":" Figma, JavaScript, ReactJS, NodeJS, Express, MongoDB , React Native , Typescript , Next js , Graghql , Tailwind CSS , Styled components",
+    "almuni": "yes"
+  },
   
 ]}
