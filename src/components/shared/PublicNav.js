@@ -34,6 +34,12 @@ function PublicNav() {
           >
             Season 2 Outline
           </Link>
+          <Link
+            to="/devcommunity"
+            className="block mt-4 dark:text-gray-100 lg:inline-block lg:mt-0 text-black hover:text-orange-400 mr-4"
+          >
+            Devs
+          </Link>
         </div>
         <div>
           <Link
