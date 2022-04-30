@@ -17,5 +17,15 @@
    "stacks": "MERN",
     "techskills":"JavaScript, ReactJs, NodeJs, Express, MongoDB, Figma",
     "almuni":"yes"
+  },
+  {
+    "name": "Joanita Nakityo",
+    "gender": "Female",
+    "cv": "https://cutt.ly/nGU9lYm",
+    "portifolio": "https://cutt.ly/kGU9U4U",
+    "stacks": "MERN",
+    "techskills":"Figma, JavaScript, ReactJS, NodeJS, Express, MongoDB, Python, C ",
+    "almuni": "yes"
   }
+  
 ]}
