@@ -35,6 +35,21 @@
     "stacks": "MERN",
     "techskills":"Mongo DB, Express, ReactJS, NodeJS, JavaScript, Python, Figma",
     "alumnus": "yes"
+  },
+  {
+    "name": "Bukirwa Halimah",
+    "gender": "Female",
+    "cv": "https://cutt.ly/qGI2Ik1",
+    "techskills":"Python, C, GCP, Azure, SQL",
+    "alumnus": "No"
+  },
+  {
+    "name": "Okello Elijah",
+    "gender": "Male",
+    "stacks": "MERN",
+    "cv": "https://cutt.ly/ZGIONcd",
+    "techskills":"Python, JavaScript, React, Django, Mongo DB, Express, NodeJS, Firebase, MySQL, Postgresql",
+    "alumnus": "No"
   }
   
 ]}
