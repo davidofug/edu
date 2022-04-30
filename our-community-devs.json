@@ -26,6 +26,15 @@
     "stacks": "MERN",
     "techskills":"Figma, JavaScript, ReactJS, NodeJS, Express, MongoDB, Python, C ",
     "almuni": "yes"
+  },
+  {
+    "name": "David Derrick Anyuru",
+    "gender": "Male",
+    "cv": "https://cutt.ly/WGU174V",
+    "portifolio": "https://anyuru.github.io/",
+    "stacks": "MERN",
+    "techskills":"Mongo DB, Express, ReactJS, NodeJS, JavaScript, Python, Figma",
+    "almuni": "yes"
   }
   
 ]}
