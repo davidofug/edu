@@ -2,11 +2,20 @@
 "developers": [
   {
     "name": "Abudi Mutamba",
-    "cv": "",
     "gender": "Male",
-    "portifolio": ""
+    "cv": "https://cutt.ly/LGUJStg",
+    "portifolio": "https://cutt.ly/HGUIZoZ",
+    "stacks": "MERN,",
+    "techskills":"WordPress, Figma, JavaScript, ReactJS, NodeJS, Express, MongoDB",
+    "almuni": "yes"
   },
   {
-   "name":"Charles Kasasira",
-   "cv":"
+   "name": "Charles Kasasira",
+   "cv": "",
+   "gender": " ",
+    "portfolio": "https://kasasira.pages.dev",
+   "stacks": "",
+    "techskills":"",
+    "almuni":"yes"
+  }
 ]}
