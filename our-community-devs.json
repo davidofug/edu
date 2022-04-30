@@ -40,7 +40,7 @@
     "name": "Mujjuni Brian",
     "gender": "Male",
     "cv": "https://drive.google.com/file/d/1ahBRoCBXIB3ZtdAwLcpNRBfqYeT3o0wg/view?usp=sharing",
-    "portifolio":"",
+    "portifolio":"https://drive.google.com/file/d/1ahBRoCBXIB3ZtdAwLcpNRBfqYeT3o0wg/view?usp=sharing",
     "stacks": "Django,Laravel,MERN",
     "techskills":"Python,Django,Laravel,Mongo DB,Flutter,Postgresql,MSSQL,Firebase,Express,Node js,React js,Bootstrap,CSS,Nginx",
     "almuni": "yes"
