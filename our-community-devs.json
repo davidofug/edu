@@ -75,5 +75,14 @@
     "cv": "https://cutt.ly/bGI5kSg",
     "techskills":"React,JavaScript, NextJS, C, C#, Figma ",
     "alumnus": "No"
-  }
+  },
+  {
+    "name": "Muwonge Lawrence",
+    "gender": "Male",
+    "cv": "https://drive.google.com/file/d/1ZwM6hTNRIUGxJmvh4zmY0_FO-QLcr7VD/view?usp=sharing",
+    "portifolio": "https://ml-resume.vercel.app/",
+    "stacks": "MERN,",
+    "techskills":"JavaScript, ReactJS, NodeJS, Express, MongoDB , React Native , Python , Next js  , Tailwind CSS , Styled components",
+    "alumnus": "No"
+  },
 ]}
