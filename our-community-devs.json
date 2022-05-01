@@ -42,7 +42,7 @@
     "cv": "https://matching.turing.com/developer-resume/ec500686cb1e6b9299dc08f368c573c04c93fac4e2df79",
     "portifolio": "https://matching.turing.com/developer-resume/ec500686cb1e6b9299dc08f368c573c04c93fac4e2df79",
     "stacks": "MERN,",
-    "techskills":" Figma, JavaScript, ReactJS, NodeJS, Express, MongoDB , React Native , Typescript , Next js , Graghql , Tailwind CSS , Styled components",
+    "techskills":" Figma, JavaScript, ReactJS, NodeJS, Express, MongoDB , React Native ,Redux , Context Api , Firebase ,Git, Typescript , Next js , Graghql , Tailwind CSS , Styled components",
     "almuni": "No"
   },
   {
@@ -60,4 +60,14 @@
     "techskills":"Python, JavaScript, React, Django, Mongo DB, Express, NodeJS, Firebase, MySQL, Postgresql",
     "alumnus": "No"
   }
+    ,
+     {
+    "name": "Mwesigwa Joshua",
+    "gender": "Male",
+    "cv": "https://matching.turing.com/developer-resume-preview/c708515048cb7e9d3a2997ee307f6f00b39381950d8a97",
+    "portifolio": "https://matching.turing.com/developer-resume-preview/c708515048cb7e9d3a2997ee307f6f00b39381950d8a97",
+    "stacks": "MERN,",
+    "techskills":" Figma, JavaScript, ReactJS, Django, Express, Nodejs ,  MongoDB , React Native , Redux",
+    "almuni": "No"
+  },
 ]}
