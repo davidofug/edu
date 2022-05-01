@@ -33,8 +33,17 @@
     "cv": "https://cutt.ly/WGU174V",
     "portifolio": "https://anyuru.github.io/",
     "stacks": "MERN",
-    "techskills":"Mongo DB, Express, ReactJS, NodeJS, JavaScript, Python, Figma",
-    "almuni": "yes"
+    "techskills":"Mongo DB, Express, ReactJS, NodeJS, JavaScript, Python, Figma, React Native, Serveless functions",
+    "alumnus": "yes"
+  },
+  {
+    "name": "Mujjuni Brian",
+    "gender": "Male",
+    "cv": "https://drive.google.com/file/d/1ahBRoCBXIB3ZtdAwLcpNRBfqYeT3o0wg/view?usp=sharing",
+    "portifolio":"https://drive.google.com/file/d/1ahBRoCBXIB3ZtdAwLcpNRBfqYeT3o0wg/view?usp=sharing",
+    "stacks": "Django, Laravel, MERN",
+    "techskills":"Python, Django, Laravel, Mongo DB ,Flutter, Postgresql, MSSQL, Firebase, Express, Node js, React js, Bootstrap, CSS, Nginx, Tailwind",
+    "alumnus": "No"
   },
   {
     "name": "Bukenya Kizza Roland",
@@ -55,13 +64,12 @@
   {
     "name": "Okello Elijah",
     "gender": "Male",
-    "stacks": "MERN",
+    "stacks": "MERN, Django",
     "cv": "https://cutt.ly/ZGIONcd",
     "techskills":"Python, JavaScript, React, Django, Mongo DB, Express, NodeJS, Firebase, MySQL, Postgresql",
     "alumnus": "No"
-  }
-    ,
-     {
+  },
+  {
     "name": "Mwesigwa Joshua",
     "gender": "Male",
     "cv": "https://matching.turing.com/developer-resume-preview/c708515048cb7e9d3a2997ee307f6f00b39381950d8a97",
@@ -69,5 +77,21 @@
     "stacks": "MERN,",
     "techskills":" Figma, JavaScript, ReactJS, Django, Express, Nodejs ,  MongoDB , React Native , Redux",
     "almuni": "No"
+  },
+  {
+    "name": "Kalenda Racheal",
+    "gender": "Female",
+    "cv": "https://cutt.ly/bGI5kSg",
+    "techskills":"React,JavaScript, NextJS, C, C#, Figma ",
+    "alumnus": "No"
+  },
+  {
+    "name": "Muwonge Lawrence",
+    "gender": "Male",
+    "cv": "https://drive.google.com/file/d/1ZwM6hTNRIUGxJmvh4zmY0_FO-QLcr7VD/view?usp=sharing",
+    "portifolio": "https://ml-resume.vercel.app/",
+    "stacks": "MERN,",
+    "techskills":"JavaScript, ReactJS, NodeJS, Express, MongoDB , React Native , Python , Next js  , Tailwind CSS , Styled components",
+    "alumnus": "No"
   },
 ]}
