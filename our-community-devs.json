@@ -54,6 +54,15 @@
     "techskills":" Figma, JavaScript, ReactJS, NodeJS, Express, MongoDB , React Native , Typescript , Next js , Graghql , Tailwind CSS , Styled components",
     "alumnus": "No"
   },
+   {
+    "name": "Wafula Allan Isaac",
+    "gender": "Male",
+    "cv": "https://drive.google.com/file/d/19P3ycNPqh-Zugilc7SRfEyzL96QAdBxU/view?usp=sharing",
+    "portifolio": "https://wafula--allan-isaac.web.app/",
+    "stacks": "MERN,",
+    "techskills":" Figma, JavaScript, ReactJS, NodeJS, Express, MongoDB , React Native , Next js, Tailwind CSS , Styled components,Firebase",
+    "alumnus": "No"
+  },
   {
     "name": "Bukirwa Halimah",
     "gender": "Female",
