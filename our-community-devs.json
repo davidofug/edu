@@ -51,7 +51,16 @@
     "cv": "https://matching.turing.com/developer-resume/ec500686cb1e6b9299dc08f368c573c04c93fac4e2df79",
     "portifolio": "https://matching.turing.com/developer-resume/ec500686cb1e6b9299dc08f368c573c04c93fac4e2df79",
     "stacks": "MERN,",
-    "techskills":" Figma, JavaScript, ReactJS, NodeJS, Express, MongoDB , React Native , Typescript , Next js , Graghql , Tailwind CSS , Styled components",
+    "techskills":" Figma, JavaScript, ReactJS, NodeJS, Express, MongoDB , React Native ,Redux , Context Api , Firebase ,Git, Typescript , Next js , Graghql , Tailwind CSS , Styled components",
+    "almuni": "No"
+  },
+   {
+    "name": "Wafula Allan Isaac",
+    "gender": "Male",
+    "cv": "https://drive.google.com/file/d/19P3ycNPqh-Zugilc7SRfEyzL96QAdBxU/view?usp=sharing",
+    "portifolio": "https://wafula--allan-isaac.web.app/",
+    "stacks": "MERN,",
+    "techskills":" Figma, JavaScript, ReactJS, NodeJS, Express, MongoDB , React Native , Next js, Tailwind CSS , Styled components,Firebase",
     "alumnus": "No"
   },
   {
@@ -70,6 +79,15 @@
     "alumnus": "No"
   },
   {
+    "name": "Mwesigwa Joshua",
+    "gender": "Male",
+    "cv": "https://matching.turing.com/developer-resume-preview/c708515048cb7e9d3a2997ee307f6f00b39381950d8a97",
+    "portifolio": "https://matching.turing.com/developer-resume-preview/c708515048cb7e9d3a2997ee307f6f00b39381950d8a97",
+    "stacks": "MERN,",
+    "techskills":" Figma, JavaScript, ReactJS, Django, Express, Nodejs ,  MongoDB , React Native , Redux",
+    "almuni": "No"
+  },
+  {
     "name": "Kalenda Racheal",
     "gender": "Female",
     "cv": "https://cutt.ly/bGI5kSg",
@@ -85,4 +103,13 @@
     "techskills":"JavaScript, ReactJS, NodeJS, Express, MongoDB,Graphql,Docker,React-Native,Redux,Tailwindcss,Material-UI,Bootstrap,CSS,and Styled-Components",
     "alumnus": "No"
   },
+  {
+    "name": "Muwonge Lawrence",
+    "gender": "Male",
+    "cv": "https://drive.google.com/file/d/1ZwM6hTNRIUGxJmvh4zmY0_FO-QLcr7VD/view?usp=sharing",
+    "portifolio": "https://ml-resume.vercel.app/",
+    "stacks": "MERN,",
+    "techskills":"JavaScript, ReactJS, NodeJS, Express, MongoDB , React Native , Python , Next js  , Tailwind CSS , Styled components",
+    "alumnus": "No"
+  }
 ]}
