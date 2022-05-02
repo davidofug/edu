@@ -34,12 +34,12 @@ function PublicNav() {
           >
             Season 2 Outline
           </Link>
-          <Link
-            to="https://community.theablestate.edu"
+          <a
+            href="https://community.theablestate.com"
             className="block mt-4 dark:text-gray-100 lg:inline-block lg:mt-0 text-black hover:text-orange-400 mr-4"
           >
             Devs
-          </Link>
+          </a>
         </div>
         <div>
           <Link
