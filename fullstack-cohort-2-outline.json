@@ -73,7 +73,7 @@
         "timeTo":"11:55:00"
     },
     {
-        "completed":false,
+        "completed":true,
         "title":"Github and Markdown",
         "breakdown":"Hosting on Github, Collaboration, What is Markdown, Where do we use it?, Practice",
         "facilitator": "Mr.Kasasira Charles",
@@ -88,7 +88,7 @@
         "breakdown":"Wireframes, Mockups, Figma",
         "facilitator": "Mr.Charles Kasasira",
         "coFacilitators": "Mr.Mutamba Abudi, Ms.Nakityo Joanita",
-        "date":"TBC",
+        "date":"16-05-2022 - 02-05-2022",
         "timeFrom":"09:05:00",
         "timeTo":"11:55:00"
     },
